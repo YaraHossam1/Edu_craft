@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+background-color: #170f27;
+}
+
+.container {
+    position: relative;
+    margin:590px;
+    width:700px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    background-color: #e8d0ff;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px 5px #3a365b inset,
+                -2px -2px 3px 5px #3a365b inset;
+    border: 1px solid #3a365b;
+}
+
+.star-widget {
+    position: relative;
+    background-color: rgb(37, 36, 36);
+    padding: 20px 30px;
+    border :1px solid #444;
+    border-radius: 5px;
+    width: 100;
+    display: flex;
+    flex-direction: row-reverse;
+    row-gap: 10px;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 2px 2px 4px 3px #3a365b,
+                -2px -2px 3px 3px #b6b1e7;
+}
+
+.container .star-widget input {
+    visibility: hidden;
+}
+.container .star-widget input:checked 
+~label {
+    color:#fd4;
+}
+.star-widget label {
+    font-size: 40px;
+    color:#444;
+    padding:10px;
+    transition: all 0,2s ease;
+}
+.container label:only-of-type {
+    font-size: 55px;
+    font-weight: 200;
+    color:#e8d0ff;
+
+}
+.container label:only-of-type::selection {
+    background-color: #e8d0ff; 
+    color:#ffffff; 
+}
+
+#rate-1 {
+    width:20px;
+}
+.star-widget input:not(:checked ) ~ label:hover ~label ,
+#rate-1:not(:checked) ~ label:hover {
+    color:#fd4;
+}
+#rate-1:checked ~label {
+    color:#fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+.container header {
+    width: 60%;
+    font-size: 25px;
+    color:#3a365b;
+    font-weight: 500;
+    text-align: center;
+    margin:5px 0px 20px 14px;
+}
+.textarea ,.BUTTON{
+    display: flex;
+    justify-content: center;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.textarea textarea {
+    
+    width:100%;
+    height:100px;
+    outline: none;
+    color:#2313ad;
+    font-size: 25px;
+    background-color: #eee;
+}
+.button  {
+    display: flex;
+    width:100%;
+    height:45px;
+    justify-content: center;
+}
+button[type='submit'] {
+    margin-bottom: 40px;
+    width:100%;
+    height:100%;
+    background-color: rgb(38, 36, 63);
+    color:white;
+    font-weight: 500;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+button[type='submit']:hover {
+    background-color: rgb(58, 57, 78);
+    box-shadow: 2px 2px 9px 2px rgb(38, 36, 63);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

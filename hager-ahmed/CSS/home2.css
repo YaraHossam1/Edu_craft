@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--myfont);
+  }
+  
+  :root {
+    --bg-lightc0: rgb(253, 253, 253);
+    --bg-light: #f6f2fa;
+    --bg-dark: #1c053a;
+    --bg-lightc2: #e8d0ff;
+    --bg-lightc3: #b88ae6;
+    --bg-lightc4: #a062dd;
+    --fg-lightc5: #631db0;
+    --fg-lightc6: #552594;
+    --fg-lightc6l: #55259430;
+    --fg-lightc6lc2: #55259480;
+    --fg-lightc7: #320074;
+    --fg-lightc7l: rgba(50, 0, 116, 0.726);
+    --fg-lightc8: #1c053a;
+    --fg-contrast: #ff5d73;
+    --fg-contrastc: #f28d9a;
+    --heart-color: #c34a5c;
+    --grad-light1: linear-gradient(37deg, var(--fg-lightc5) 0%, var(--bg-lightc4) 100%);
+    --myfont: system-ui, -apple-system, BlinkMacSystemFont;
+    --mx-width: 1600px;
+    --facebook-main: #1877f2;
+    --instagram-main: #e1306c;
+    --linkedin-main: #0077b5;
+    --x-main: #000000;
+    --telegram-main: #24a1de;
+    /* logo color palette */
+    --logo-light: #1c053a;
+    --span12-light: #631db0;
+    --hy-light: #1c053a;
+    --span3-light: #1c053a;
+    --logo-dark: #f6f2fa;
+    --span12-dark: #a062dd;
+    --hy-dark: #f6f2fa;
+    --span3-dark: #b88ae6;
+  }
+  
+  body {
+    background-color: var(--bg-dark);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  .wrapper {
+    margin: 0;
+  }
+  
+  
+  /*--------------Navigation Bar---------------*/
+  .wrapper .top_navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000000;
+    justify-content: space-between;
+    background: var(--bg-dark);
+    align-items: center;
+    padding: 8px 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*--------------Logo---------------*/
+  .wrapper .top_navbar .hamburger {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+    margin: 0;
+  }
+  
+  .hamburger i {
+    padding-top: 6px;
+    font-size: 2.5em;
+    color: var(--logo-dark);
+  }
+  
+  .hamburger .span1,
+  .hamburger .span2,
+  .hamburger .hy {
+    padding-top: 6px;
+    color: var(--span12-dark);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .hamburger .hy {
+    color: var(--hy-dark);
+  }
+  
+  .hamburger .span3 {
+    color: var(--span3-dark);
+    font-size: 0.7em;
+  }
+  
+  /*--------------الجزء اللى فى النص فى الناف---------------*/
+  .wrapper .top_navbar .listnav ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .wrapper .top_navbar .listnav ul li {
+    font-size: 20px;
+    font-weight: 480;
+    text-transform: capitalize;
+    color: var(--logo-dark);
+    padding: 15px 15px;
+  }
+  
+  .wrapper .top_navbar .listnav ul li a:link,
+  .wrapper .top_navbar .listnav ul li a:visited {
+    color: var(--logo-dark);
+  }
+  
+  .wrapper .top_navbar .listnav ul li:hover,
+  .wrapper .top_navbar .listnav ul li:active {
+    border-bottom: 5px dotted var(--logo-dark);
+  }
+  
+  /*--------------الجزء اليمين فى الناف---------------*/
+  .top_menu ul {
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .signin_up {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+  }
+  
+  .signin_up ul li a {
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--logo-dark);
+    color: #1c053a;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  .signin_up ul li a:hover {
+    color: var(--logo-dark);
+    background-color: #1c053a;
+    border: 2px solid var(--logo-dark);
+  }
+  
+  .top_menu ul li a.profile,
+  .top_menu ul li a.notify {
+    display: block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    background: var(--logo-dark);
+    color: #1c053a;
+    border-radius: 50%;
+  }
+  
+  .top_menu ul li a.profile:hover,
+  .top_menu ul li a.notify:hover {
+    border: 2px solid var(--logo-dark);
+    background-color: #1c053a;
+    color: var(--logo-dark);
+  }
+  
+  .logoutdiv {
+    display: flex;
+    visibility: visible;
+    align-items: center;
+  }
+  
+  .top_menu ul li a.logout {
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--logo-dark);
+    color: #1c053a;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  .top_menu ul li a.logout:hover {
+    color: var(--logo-dark);
+    background-color: #1c053a;
+    border: 2px solid var(--logo-dark);
+  }
+  
+  /*--------------Discusion button---------------*/
+  .discussion {
+    display: none;
+  }
+  
+  div.discussion a {
+    padding: 8px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--logo-dark);
+    color: #1c053a;
+    z-index: 10000;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  div.discussion a i {
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  div.discussion a:hover {
+    background: #1c053a;
+    border: 2px solid var(--logo-dark);
+    color: var(--logo-dark);
+  }
+  
+  
+  /*--------------------Menu-------------------*/
+  /*---------------------الحاجات اللى هتحصل لما المنيو تظهر------------------*/
+  .wrapper.collapse .sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    height: calc(100% - 60px);
+    transition: all 0.2s ease;
+    z-index: 10000;
+    overflow-y: auto;
+    background-color: var(--bg-dark);
+  }
+  
+  .wrapper.collapse .sidebar ul li {
+    z-index: 100000;
+    display: block;
+  }
+  
+  .wrapper.collapse .sidebar ul li a {
+    display: block;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 1px;
+    color: var(--logo-dark);
+    white-space: nowrap;
+  }
+  
+  .wrapper.collapse .sidebar ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--fg-lightc5);
+    display: none;
+  }
+  
+  .wrapper.collapse .sidebar ul li a span.icon {
+    margin: 8px;
+    display: inline-block;
+  }
+  
+  .wrapper.collapse .sidebar ul li a span.title {
+    left: 70px;
+    display: inline-block;
+    text-transform: capitalize;
+  }
+  
+  .wrapper.collapse .sidebar ul li a:hover {
+    background: var(--logo-dark);
+    color: #1c053a;
+  }
+  
+  .wrapper.collapse .sidebar ul li a:hover:before {
+    display: block;
+  }
+  
+  .wrapper.collapse .main_container {
+    width: (100% - 70px);
+    margin-right: 200px;
+  }
+  
+  /*---------------------الحاجات اللى هتحصل لما المنيو تختفى-------------------*/
+  .wrapper .sidebar {
+    width: 70px;
+  }
+  
+  .wrapper .sidebar ul li a {
+    text-align: start;
+  }
+  
+  .wrapper .sidebar ul li a span.icon {
+    margin: 0;
+  }
+  
+  .wrapper .sidebar ul li {
+    display: none;
+  }
+  
+  .wrapper .main_container {
+    width: (100% - 200px);
+    margin-top: 70px;
+    transition: all 0.2s ease;
+  }
+
+  .wrapper .main_container .item {
+    font-size: 14px;
+    line-height: 22px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  /*--------------Dark mode button---------------*/
+  .darkmode-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: var(--bg-dark);
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .darkmode-button .sun {
+    width: 50%;
+    height: 50%;
+    background-color: var(--bg-lightc3);
+    border: solid 2px var(--bg-dark);
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color, border-color, scale 0.3s ease-in-out;
+  }
+  
+  .darkmode-button .moon {
+    content: "";
+    position: absolute;
+    background-color: var(--bg-light);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    top: -33%;
+    left: 91%;
+    z-index: 3;
+    transition: transform 0.4s ease-out;
+  }
+  
+  .darkmode-button .lines {
+    position: absolute;
+    width: 80%;
+    height: 4%;
+    border-radius: 10px;
+    background-color: var(--bg-light);
+    transition: all 0.3s ease-in-out;
+    animation: rotate 10s linear 0s infinite running;
+  }
+  
+  .darkmode-button .l2 {
+    transform: rotate(90deg);
+  }
+  
+  .darkmode-button .l3 {
+    width: 70%;
+    transform: rotate(45deg);
+  }
+  
+  .darkmode-button .l4 {
+    width: 70%;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes rotate {
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  .darkmode-button.dark {
+    background-color: var(--bg-light);
+  }
+  
+  .darkmode-button .lines.dark {
+    width: 0%;
+  }
+  
+  .darkmode-button .sun.dark {
+    background-color: var(--bg-dark);
+    border-color: transparent;
+    scale: 1.2;
+  }
+  
+  .darkmode-button .moon.dark {
+    transform: translate(-104%, 96%);
+  }
+  
+  
+  /*--------------------Header Image-------------------*/
+  .imghead {
+    z-index: 100;
+    background-image: url("../Images/header.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 570px;
+    width: 100%;
+    padding: calc((570px - 7.5rem) / 2) 0;
+    display: block;
+    position: relative;
+    align-items: center;
+  }
+  
+  .imghead h1,
+  .imghead p {
+    color: var(--logo-dark);
+    text-shadow: 5px 1px var(--fg-lightc6);
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1;
+    text-transform: capitalize;
+  }
+  
+  .imghead p {
+    font-size: 2.5rem;
+    text-transform: lowercase;
+  }
+  
+  
+  /*--------------------Most popular courses-------------------*/
+  .item section {
+    padding: 15px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  .courses:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .courses h2,
+  .aboutus h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    text-transform: capitalize;
+    color: var(--logo-dark);
+  }
+  
+  .course {
+    margin: 2.5%;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    float: left;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    height: 45%;
+    cursor: pointer;
+  }
+  
+  .course h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-shadow: 2px 1px var(--fg-lightc6);
+  }
+  
+  .course p,
+  .aboutus p {
+    margin: 20px;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  
+  /*--------------------Course Details-------------------*/
+  .coursename {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    color: var(--logo-dark);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: calc((100% - 80px) / 4 - 2em);
+    display: block;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  
+  .coursename:hover {
+    opacity: 1;
+  }
+  
+  /*--------------------Course Image-------------------*/
+  .course img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 20px;
+  }
+  
+  .course img:hover {
+    opacity: 0.3;
+  }
+  
+  /*--------------------Enroll Button-------------------*/
+  .button {
+    display: inline-block;
+    background-color: #1c053a;
+    color: var(--logo-dark);
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: var(--bg-lightc3);
+  }
+  
+  
+  /*--------------------About Us-------------------*/
+
+
+  /*--------------------About Us-------------------*/
+.aboutus {
+  margin: 0;
+  justify-content: center;
+  background-color: var(--fg-lightc6l);
+}
+
+table {
+  margin: auto;
+  max-width: 75%;
+}
+
+.about-section {
+padding: 50px;
+text-align: center;
+color: #1c053a;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+background-color: var(--bg-light);
+border-radius: 20px;
+margin: 8px;
+padding: 35px 10px 15px 10px;
+text-align: center;
+opacity: 0.8;
+}
+
+.about-section h2,
+.about-section p {
+  color: var(--bg-light);
+  font-size: 1.2em;
+} 
+
+.container h2 {
+  margin-top: 10px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 1.1em;
+}
+
+.title {
+color: #a062dd;
+font-size: 1.2em;
+}
+
+/* iframe -------------------------- iframe */
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.map-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.map-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.map-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

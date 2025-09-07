@@ -1,0 +1,126 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    }
+    .notification{
+    font-family: platypi;
+    font-size: 50;
+    margin-left: 20px;
+    color: #300b53;
+    }
+    .dark-lightbtn{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    background-color:  #390072db;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 50px;
+    }
+    .notification-container{
+    width: 70%; 
+    margin: auto; 
+    }
+    .single-notifi{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 243, 243);
+    transition:0.3s;
+    border-radius: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    }
+    .single-notifi:hover{
+    background-color: rgb(199, 199, 199);
+    cursor: pointer;
+    }
+    .single-notifi:active{
+    background-color: #ffffff;
+    }
+    .notification-img{
+    margin: 5px;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    }
+    .notificationDetails{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    }
+    h3{
+    font-family: platypi;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    color:#3f2447;
+    }
+    .notification-text{
+    font-family: "roboto",sans-serif;
+    font-weight: 500;
+    font-size:15px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -0.1;
+    }
+    .notification-time{
+    font-size: 11px;
+    font-weight: 300;
+    font-family: "roboto", serif;
+    color: rgb(135 135 135);
+    }
+    #demo{
+    font-family: platypi;
+    color: #300b53;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    
+    }
+    .buttons{
+    margin-left: 530px;
+    margin-top: -50px;
+    margin-bottom:150px ;
+    }
+    .mark-buttom{
+    background-color:  #39295e;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 50px;
+    }
+    .mark-buttom:hover{
+    color: #39295e;
+    background-color:#ffffff;
+    border-color: #39295e;
+    }   
+    .dark-mode{
+    background-color: #1b132b;
+    color: #868686;
+    }  
+    .dark-mode .single-notifi
+    {
+    background-color: #39295e;
+    }
+    .dark-mode h1{
+    color: #ffffff;
+    }
+    .dark-mode h3{
+    color: #868686;
+    }
+    .dark-mode #demo{
+    color: #ffffff;
+    }
+    .dark-mode .single-notifi:hover{
+    opacity: 0.7;
+    }
+    .dark-mode .dark-lightbtn{
+    background-color: #ffffff;
+    }

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link id="dark-style" rel="stylesheet" href="style.css">
+    <title>Enroll</title>
+</head>
+
+<body>
+    <div class="darkmode-button" style="position: absolute; top: 20px; right: 20px;">
+        <div class="l1 lines"></div>
+        <div class="l2 lines"></div>
+        <div class="l3 lines"></div>
+        <div class="l4 lines"></div>
+        <div class="sun"></div>
+        <div class="moon" src="../../yara/my-learning.html"></div>
+    </div>
+
+    <!-- for go to top icon -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+    <!-- end for go to top icon -->
+
+    <form id="form" action="exp.html" method="get" class="main-form">
+        <a href="../view-course/main.html" style="text-decoration: none;" class="cancel-button">
+            <i class="uil uil-adjust"></i> Cancel
+        </a>
+        <h1 style="font-size: 48px; font-weight: 700; color: var(--fg-lightc8); margin-bottom: 30px;">
+            Checkout:
+        </h1>
+        <div class="order-details">
+            <h3 style="margin-bottom: 20px;">Order Details:</h3>
+            <p style="margin-left: 20px;">
+                <strong style="margin-right: 15px;">Name:</strong> C++ for Beginners<br>
+                <strong style="margin-right: 15px;">Price:</strong> $29.99<br>
+                <strong style="margin-right: 15px;">Availability:</strong> Online<br>
+                <strong style="margin-right: 15px;">Certificate:</strong> Provided upon completion
+            </p>
+        </div>
+        <div class="choose-currency">
+            <label for="currency" class="larger">Select your currency:</label>
+            <select id="currency" name="currency" class="currency-select" required>
+                <option value="none">Select</option>
+                <option value="USD">US Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Japanese Yen (JPY)</option>
+                <option value="GBP">British Pound (GBP)</option>
+                <option value="AUD">Australian Dollar (AUD)</option>
+                <option value="CAD">Canadian Dollar (CAD)</option>
+                <option value="CHF">Swiss Franc (CHF)</option>
+                <option value="CNY">Chinese Yuan (CNY)</option>
+                <option value="INR">Indian Rupee (INR)</option>
+                <option value="SGD">Singapore Dollar (SGD)</option>
+                <option value="HKD">Hong Kong Dollar (HKD)</option>
+                <option value="NZD">New Zealand Dollar (NZD)</option>
+                <option value="SEK">Swedish Krona (SEK)</option>
+                <option value="NOK">Norwegian Krone (NOK)</option>
+                <option value="KRW">South Korean Won (KRW)</option>
+                <option value="BRL">Brazilian Real (BRL)</option>
+                <option value="RUB">Russian Ruble (RUB)</option>
+                <option value="TRY">Turkish Lira (TRY)</option>
+                <option value="ZAR">South African Rand (ZAR)</option>
+                <option value="AED">UAE Dirham (AED)</option>
+            </select>
+        </div>
+        <div class="hidden-by-default payment-container">
+            <div class="payment">
+                <div>
+                    <p class="larger">Payment Method: Choose One</p>
+                    <div class="payment-options">
+                        <span class="con">
+                            <input type="radio" name="payment" id="payment-visa" value="visa" checked>
+                            <label for="payment-visa" class="radio-payment large">Visa</label>
+                        </span>
+                        <span class="con">
+                            <input type="radio" name="payment" id="payment-mastercard" value="master">
+                            <label for="payment-mastercard" class="radio-payment large">MasterCard</label>
+                        </span>
+                        <span class="con">
+                            <input type="radio" name="payment" id="payment-misa" value="misa">
+                            <label for="payment-misa" class="radio-payment large">Meeza</label><br>
+                        </span>
+                        <span class="con">
+                            <input type="radio" name="payment" id="payment-paypal" value="paypal">
+                            <label for="payment-paypal" class="radio-payment large">PayPal</label>
+                        </span>
+                        <span class="con">
+                            <input type="radio" name="payment" id="payment-bankmisr" value="bankmisr">
+                            <label for="payment-bankmisr" class="radio-payment large">Banque Misr</label>
+                        </span>
+                    </div>
+                </div>
+                <!-- card container -->
+                <div class="card-container">
+                    <div class="card" id="card">
+                        <img src="media/card-icon.png" class="icon" />
+                        <div class="name-on-card">
+                            <h2>Name on card: </h2>
+                            <input type="text" style="display: inline; max-width: 200px; height: 35px;"
+                                placeholder="Name" required>
+                        </div>
+                        <div class="infos">
+                            <h3 style="margin-bottom: 5px; margin-top: 15px;">Card Number</h3>
+                            <section class="card-number">
+                                <input style="display: inline; max-width: 45px; height: 30px;" type="text"
+                                    class="visa-4-input" id="visa-4-input" name="visa-4-input"
+                                    title=" Please enter only numeric characters" placeholder="xxxx" required>
+                                <input style="display: inline; max-width: 45px; height: 30px;" type="text"
+                                    class="visa-4-input" id="visa-4-input" name="visa-4-input"
+                                    title=" Please enter only numeric characters" placeholder="xxxx" required>
+                                <input style="display: inline; max-width: 45px; height: 30px;" type="text"
+                                    class="visa-4-input" id="visa-4-input" name="visa-4-input"
+                                    title=" Please enter only numeric characters" placeholder="xxxx" required>
+                                <input style="display: inline; max-width: 45px; height: 30px;" type="text"
+                                    class="visa-4-input" id="visa-4-input" name="visa-4-input"
+                                    title=" Please enter only numeric characters" placeholder="xxxx" required>
+                            </section>
+                            <div class="bottom">
+                                <aside class="infos--bottom">
+                                    <section class="expire">
+                                        <h3>Expiry date</h3>
+                                        <div style="color: var(--border-dark);">
+                                            <input style="display: inline; max-width: 40px; height: 30px;" type="text"
+                                                class="visa-2-input month" id="visa-2-input" name="visa-2-input"
+                                                title=" Please enter only numeric characters" placeholder="06" min="1"
+                                                max="12" required> /
+                                            <input style="display: inline; max-width: 40px; height: 30px;" type="text"
+                                                class="visa-2-input" id="visa-2-input" name="visa-2-input"
+                                                title=" Please enter only numeric characters" placeholder="25" required>
+                                        </div>
+                                    </section>
+                                    <section class="expire">
+                                        <h3>CVV</h3>
+                                        <div>
+                                            <input style="display: inline; max-width: 40px; height: 30px;" type="text"
+                                                class="visa-3-input" id="visa-3-input" name="visa-3-input"
+                                                title=" Please enter only numeric characters" placeholder="123"
+                                                required>
+                                        </div>
+                                    </section>
+                                </aside>
+                                <img src="media/visa-logo.png" class="brand" />
+                                <img src="media/card-chip.png" class="chip" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="coupon" class="label-box larger">Coupon: </label>
+                <input style="display: inline; max-width: 160px; height: 50px; " type="text" class="coupon text-box"
+                    id="coupon" name="coupon" title=" Please enter only numeric characters" placeholder="123456"
+                    min="111111" max="999999">
+            </div>
+            <!-- a progress bar, 2 divs of different color, adjusting the width of the second div -->
+            <div class="progress-bar">
+                <div id="progress-barv" class="progress-barv"></div>
+                <div class="allset hidden-by-default"> <i class='bx bxs-check-circle'></i> You're all set, please
+                    proceed to the last
+                    step!
+                </div>
+            </div>
+        </div>
+        <!-- ! captcha check section add hidden by defaults -->
+        <div id="captcha" class="captcha payment-container hidden-by-default">
+            <h2>Captcha Check:</h2>
+            <p style="margin-left: 20px; color: var(--bg-lightc3);">Listen to a 6-digit audio sequence and
+                accurately enter the digits into the corresponding text field.
+            </p>
+            <div class="audio-input">
+                <audio src="media/captcha-check.mp3" controls></audio>
+                <input style="display: inline; max-width: 160px; height: 50px; " type="text"
+                    class="captcha-input text-box" id="captcha-input" name="captcha-input"
+                    title=" Please enter only numeric characters" placeholder="123456" min="111111" max="999999"
+                    required>
+            </div>
+            <input type="submit" value="Purchase Now!" class="submit-button" disabled>
+        </div>
+    </form>
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 30%;">
+                    <div class="logo">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <div class="txt">
+                            <span class="span1">Edu</span>
+                            <span class="hy">-</span>
+                            <span class="span2">Craft</span>
+                            <br>
+                            <span class="span3">Craft Your Future with Edu-Craft!</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px; color: var(--bg-lightc3);">
+                        <b>About
+                            us: </b>
+                    </p>
+                    <p style="color: var(--bg-lightc3); opacity: .6;">Empowering learners with innovative education.
+                        Explore, create,
+                        and excel
+                        with our engaging
+                        courses and resources.</p>
+                </div>
+
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>pages Links</h4>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>categories links</h4>
+                    <ul>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a target="_blank" class="facebook" href="https://www.facebook.com/"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a target="_blank" class="telegram" href="https://web.telegram.org/k/"><i
+                                class="uil uil-telegram-alt"></i></a>
+                        <a target="_blank" class="instagram" href="https://www.instagram.com/"><i
+                                class="uil uil-instagram"></i></a>
+                        <a target="_blank" class="linkedin" href="https://www.linkedin.com/feed/"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                    </div>
+                    <h4>Email us</h4>
+                    <a target="_blank" class="email-us" href="mailto: edu-craft@example.edu.eg"><i
+                            class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+                </div>
+            </div>
+        </div>
+        <p class="copywrite">
+            © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+        </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0ede2dd129.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

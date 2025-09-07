@@ -1,0 +1,199 @@
+:root {
+    /* todo global colors with light &dark mode */
+    --bg-light:     #f6f2fa;
+    --bg-dark:      #1c053a;
+    --bg-lightc3:   #B88AE6;
+    --bg-lightc2:   #d1b5ec;
+
+    --fg-lightc5:   #631DB0;
+    --fg-lightc6:   #552594;
+    --fg-lightc6l:  #55259430;
+    --fg-lightc6lc2:#55259480;
+    --fg-lightc7:   #320074;
+    --fg-lightc7l:  rgba(50, 0, 116, 0.726);
+    --fg-lightc8:   #1c053a;
+    --fg-contrast: #FF5D73;
+    --fg-contrastc: #f28d9a;
+    --heart-color:  #c34a5c;
+    --grad-light1: linear-gradient(37deg, var(--fg-lightc5) 0%, var(--bg-lightc3) 100%);
+    --myfont: system-ui, -apple-system, BlinkMacSystemFont;
+    --mx-width: 1600px;
+    --facebook-main: #1877F2;
+    --instagram-main: #E1306C;
+    --linkedin-main: #0077B5;
+    --x-main: #000000;
+    --telegram-main: #24A1DE;
+    /* logo color palette */
+    --logo-light: #f6f2fa;
+    --span12-light: #A062DD; 
+    --hy-light: #f6f2fa;
+    --span3-light: #A062DD;
+}
+
+/* footer dark styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--bg-light); */
+    background-color: inherit;
+    padding: 70px 0;
+    border-top: dashed var(--bg-lightc2) 2px;
+}
+
+footer .container {
+    max-width: 1280px;
+    margin:auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+	font-size: 18px;
+	color: var(--bg-light);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    width: fit-content;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: var(--bg-lightc3);
+	height: 2px;
+	box-sizing: border-box;
+	width: 110%;
+    border-radius: 50%;
+}
+
+.footer-col ul li {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+    font-weight: 400;
+	text-transform: capitalize;
+	color: var(--bg-lightc3);
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: var(--heart-color);
+	padding-left: 8px;
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: var(--fg-lightc6lc2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--bg-light);
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a i {
+    font-size: larger;
+    padding: 8px;
+}
+
+.footer-col .social-links a.facebook:hover {
+	color: var(--bg-light);
+	background-color: var(--facebook-main);
+}
+.footer-col .social-links a.telegram:hover {
+	color: var(--bg-light);
+	background-color: var(--telegram-main);
+}
+.footer-col .social-links a.instagram:hover {
+	color: var(--bg-light);
+	background-color: var(--instagram-main);
+}
+.footer-col .social-links a.linkedin:hover {
+	color: var(--bg-light);
+	background-color: var(--linkedin-main);
+}
+
+.footer-col .social-links a:hover {
+	background-color: var(--bg-light);
+}
+
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.footer .logo i {
+    font-size: 3em;
+    color: var(--logo-light);
+}
+
+.logo .span1, 
+.logo .span2 {
+    color: var(--span12-light);
+    font-size: 2em;
+}
+
+.logo .span3 {
+    color: var(--span3-light);
+    font-size: .8em;
+}
+.logo .hy {
+    color: var(--hy-light);
+    font-size: 1.8em;
+}
+
+.footer .email-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--bg-lightc3);
+    color: var(--bg-light);
+    padding: 10px;
+    border-radius: 30px;
+    border: solid 2px transparent;
+    transition: all .3s ease-in-out;
+}
+
+.footer .email-us:hover {
+    background-color: var(--bg-light);
+    color: var(--bg-dark);
+    border: solid 2px var(--bg-dark);
+    
+}
+
+.footer .email-us i {
+    font-size: x-large;
+}
+
+.footer .copywrite {
+    margin-top: 20px;
+    color: var(--bg-lightc3);
+}

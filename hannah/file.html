@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="file.css" />
+    <meta name="rate" value="view-port" content="width=device-width, initial-scale=1.0">
+    <title>edu-craft</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-Section">
+            <div>
+                <i class='bx bx-home'></i>
+                <p> edu-craft</p>
+            </div>
+            <div>
+                <p>| Deep learning Preparation Course : Python</p>
+            </div>
+        </div>
+        <div class="right-Section">
+            <div>
+                <a target="_blank" href="leave-rating.html" class="leave-rating">
+                    <span class="fa fa-star star"></span>
+                    leave rating
+                </a>
+            </div>
+            <div class="wrapper">
+                <span class="progress">
+
+                </span>
+                <p> progress</p>
+            </div>
+            <div>
+                <button class="darkmode">
+                    <i class='bx bx-moon mode-icon'></i>
+                </button>
+            </div>
+            <div>
+                <button class="share-btn">
+                    <a href="share.html">share</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="video extend-video">
+            <video controls src="python.mp4" class="extend-video"></video>
+            <button id="aside-open" onclick="
+            document.querySelector('aside').classList.remove('is-removed');
+            document.querySelector('main .content').classList.remove('extend-content');
+            document.querySelector('video').classList.remove('extend-video');
+            document.querySelector('.video').classList.remove('extend-video');
+            document.querySelector('.video button').style.display='none';
+            " ;>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="36" viewBox="0 0 24 24"
+                    style="fill: rgb(255, 255, 255);transform: scaleY(-1); ">
+                    <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z">
+                    </path>
+                </svg>
+                <span>course content</span>
+            </button>
+        </div>
+        <div class="content extend-content">
+            <nav>
+                <div class="search">
+                    <a id="search" href="">
+                        <i class='bx bx-search-alt-2'></i>
+                    </a>
+                </div>
+                <div id="description" width="100px">
+                    <a href="#description">
+                        overview
+                    </a>
+                </div>
+                <div>
+                    <a class="reviews" href="reviews.html" onclick="">
+                        reviews
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        announcements
+                    </a>
+                </div>
+                <div>
+                    <a href="../hager-ahmed/HTML/quiz.html">
+                        quiz
+                    </a>
+                </div>
+            </nav>
+            <hr>
+            <div class="overview">
+                <div class="instructor">
+                    <div class="sec1">
+                        instructor :
+                    </div>
+                    <div class="instructor-info">
+                        <div class="ins-img" class="ins-img">
+                            <img src="img/download.jpg">
+                        </div>
+                        <div class="ins-name">
+                            <div>
+                                levi ackerman
+                            </div>
+                            <div>
+                                Machine Learning Senior Engineer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor-info2">
+                        He is also a proven winner in his field,
+                        having won an award from Fab Lab Egypt,
+                        a high-profile center for innovators,
+                        and guiding his Helwan University team to second
+                        place in a global research competition valued ‘Idea to Product.’.
+                    </div>
+                </div>
+                <hr>
+                <div class="course-info">
+                    <div class="sec2">
+                        about this course :
+                    </div>
+
+                    <h3>
+                        <details>
+                            <summary>
+                                <p>
+                                    What you’ll learn:
+                                </p>
+                            </summary>
+
+                            <ul>
+                                <li>
+                                    You'll be aware with Python syntax and you'll be able to program what you'll have
+                                    learned in a final project you'll develop locally.
+                                </li>
+                            </ul>
+                        </details>
+                    </h3>
+                    <h3>
+                        <details>
+                            <summary>
+                                <p>
+                                    Are there any course requirements or prerequisites?
+                                </p>
+                            </summary>
+                            <ul>
+                                <li>
+                                    You should be able to use a PC
+                                </li>
+                                <li>
+                                    A basic understanding of any of the programming languages is a plus.
+                                </li>
+                            </ul>
+                        </details>
+                    </h3>
+                    <h3>
+                        <details>
+                            <summary>
+                                <p>
+                                    Who this course is for:
+                                </p>
+                            </summary>
+                            <ul>
+                                <li>
+                                    This course is designed for any one who want to learn Python programming and machine
+                                    learning from scratch.
+                                </li>
+                            </ul>
+                        </details>
+                    </h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+    <aside class="is-removed">
+        <div class="aside-content">
+            <div class="aside-header">
+                course content:
+                <hr>
+                <div class="close-icon">
+                    <button class="close-button" onclick='
+                    document.querySelector("aside").classList.add("is-removed");
+                    document.querySelector("main .content").classList.add("extend-content");
+                    document.querySelector("video").classList.add("extend-video");
+                    document.querySelector(".video").classList.add("extend-video");
+                    document.querySelector(".video button").style.display="flex";
+                    '>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                            style="fill: rgb(255, 255, 255);">
+                            <path
+                                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="aside-sections">
+                <div class="first">
+                    <details>
+                        <summary class="side-bar-sec1">
+                            SECTION 1:
+
+                        </summary>
+                        <div class="side-bar-container">
+                            <div class="checkbox-container">
+                                <input id="i1" type="checkbox" value="data types">
+                                <label for="i1">1. data types</label>
+                            </div>
+                            <div class="video-time-icon-container">
+                                <img src="img/video.png" width="15px">
+                                <span>10 min</span>
+                            </div>
+
+                        </div>
+                    </details>
+                    <hr>
+                </div>
+                <div class="second">
+                    <details>
+                        <summary class="side-bar-sec2">
+                            SECTION 2:
+                        </summary>
+                        <div class="side-bar-container">
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i1" type="checkbox" value="data types">
+                                    <label for="i1">1. data types</label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i2" type="checkbox" value="variable declaration">
+                                    <label for="i2">
+                                        2. variable declaration
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>2 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i3" type="checkbox" value="operators">
+                                    <label for="i3">
+                                        3. operators
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>5 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i4" type="checkbox" value="if condition">
+                                    <label for="i4">
+                                        4. if condition
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>25 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i5" type="checkbox" value="loops">
+                                    <label for="i5">
+                                        5. loops
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>7.5 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i6" type="checkbox" value="for loop">
+                                    <label for="i6">
+                                        6. for loop
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i7" type="checkbox" value="while loop">
+                                    <label for="i7">
+                                        7. while loop
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                            <div class="side-bar">
+                                <div class="checkbox-container">
+                                    <input id="i8" type="checkbox" value="functions">
+                                    <label for="i8">
+                                        8. functions
+                                    </label>
+                                </div>
+                                <div class="video-time-icon-container">
+                                    <img src="img/video.png" width="15px">
+                                    <span>15 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 30%;">
+                    <div class="logo">
+                        <i class='bx bx-home'></i>
+                        <div class="txt">
+                            <span class="span1">Edu</span>
+                            <span class="hy">-</span>
+                            <span class="span2">Craft</span>
+                            <br>
+                            <span class="span3">Craft Your Future with Edu-Craft!</span>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <p class="abt">
+                            <b>About us:</b>
+                        </p>
+                        <p class="det">Empowering learners with innovative education. Explore, create,
+                            and excel
+                            with our engaging
+                            courses and resources.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>pages Links</h4>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>categories links</h4>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">cookie settings</a></li>
+                        <li><a href="#">site map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a class="facebook" href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                        <a class="telegram" href="https://web.telegram.org/k/"><i class='bx bxl-telegram'></i></a>
+                        <a class="instagram" href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                        <a class="linkedin" href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <h4>Email us :</h4>
+                    <a class="email-us" href="#">
+                        <i class='bx bx-envelope'></i>
+                        edu-craft@example.edu.eg
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copywrite">
+            © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+        </p>
+    </footer>
+    <script>
+        let button = document.querySelector(".darkmode");
+        let code1 = `<i class='bx bxs-sun mode-icon' style='color:#ffdd44'></i>`;
+        let code2 = `<i class='bx bx-moon mode-icon'></i>`;
+        button.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                document.querySelector(".darkmode").innerHTML = code1;
+            }
+            else {
+                document.querySelector(".darkmode").innerHTML = code2;
+            }
+        };
+    </script>
+</body>
+
+</html>

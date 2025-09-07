@@ -1,0 +1,297 @@
+<html>
+
+<head>
+
+    <!-- footer stuff -->
+    <link href="https://cdn.jsdelivr.net/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <link id="footer-style" rel="stylesheet" href="footer.css">
+    <!-- footer stuff -->
+
+    <title>time learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Platypi:ital@0;1&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="schedule&todo.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Learning schedule</h1>
+
+        <button class="dark-lightbtn" onclick="toggleDarkMode()"><img
+                src="media/dark_mode_FILL0_wght400_GRAD0_opsz24.png" alt="dark&light theme"> </button>
+    </div>
+
+    <div class="notes">
+        <h2 style="margin-left: 0;">Learning reminders</h2>
+        <h3>Calendar events</h3>
+        <p class="tricks">Learning a little each day adds up. Research shows that students who make learning a habit are
+            more likely to reach their goals. Set time aside to learn and get reminders using your learning scheduler.
+        </p>
+        <h6>Requires Google Calendar, Apple Calendar, or Outlook</h6>
+    </div>
+    <div id="1st-div" class="schedule">
+        <img src="media/calendar_month_FILL0_wght400_GRAD0_opsz24.png" alt="img date">
+        <div class="schedule-detailes">
+            <h3>Time to learn!</h3>
+            <p>JavaScript & jQuery - Certification Course for Beginners</p>
+            <p>Daily</p>
+            <p>Reminder notification 1hr before</p>
+            <p>30min at 12:00 PM</p>
+            <p>Added to Google Calendar</p>
+        </div>
+    </div>
+    <div id="2nd-div" class="schedule">
+        <img src="media/calendar_month_FILL0_wght400_GRAD0_opsz24.png" alt="img date">
+        <div class="schedule-detailes">
+            <h3>Time to learn!</h3>
+            <p>HTML & CSS Course with Certification </p>
+            <p>Daily</p>
+            <p>Reminder notification 1d before</p>
+            <p>1hr at 3 PM</p>
+            <p>Added to Google Calendar</p>
+        </div>
+    </div>
+    <div id="3rd-div" class="schedule">
+        <img src="media/calendar_month_FILL0_wght400_GRAD0_opsz24.png" alt="img date">
+        <div class="schedule-detailes">
+            <h3>Time to learn!</h3>
+            <p>Machine Learning - from basics to Advanced</p>
+            <p>3d/weak</p>
+            <p>Reminder notification 18hr before</p>
+            <p>3hr at 7 PM</p>
+            <p>Added to Google Calendar</p>
+        </div>
+    </div>
+    <div id="4th-div" class="schedule">
+        <img src="media/calendar_month_FILL0_wght400_GRAD0_opsz24.png" alt="img date">
+        <div class="schedule-detailes">
+            <h3>Time to learn!</h3>
+            <p>Data Science: Modern Deep Learning in Python</p>
+            <p>5d/weak</p>
+            <p>Reminder notification 30min before</p>
+            <p>1hr at 12:00 PM</p>
+            <p>Added to Google Calendar</p>
+        </div>
+    </div>
+    <p id="demo"></p>
+    <button id="but1" onclick="
+        document.getElementById('1st-div').style.display='none';
+        document.getElementById('2nd-div').style.display='none';
+        document.getElementById('3rd-div').style.display='none';
+        document.getElementById('4th-div').style.display='none';
+        alert(`All Notification Are Deleted`) ;
+        document.getElementById('but1').style.display='none';
+        document.getElementById('demo').innerHTML='Your Schedule Is Empty ! ';
+        " class="mark-buttom">Delete All </button>
+
+
+    <div class="container">
+        <div class="to-do-list-container">
+            <form action="">
+                <div class="flag">To Do List</div>
+
+                <p> <input type="checkbox">
+                    <label for="todo1">JS & jQuery</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label for="todo1">HTML & CSS</label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label for="todo1">Machine Learning </label>
+                </p>
+                <p>
+                    <input type="checkbox">
+                    <label for="todo1">Data Science </label>
+                </p>
+
+
+            </form>
+        </div>
+        <div class="motivation">
+            <h2>Time Mangment Opjectives</h2>
+            <ul>
+                <li> "You've got this!"</li>
+                <li>"One step at a time."</li>
+                <li>"Progress, not perfection."</li>
+                <li> "Every small step counts."</li>
+                <li> "You're making things happen!"</li>
+                <li> "Stay focused, stay positive."</li>
+                <li> "Believe in your abilities."</li>
+                <li> "Today's challenges are tomorrow's strengths."</li>
+                <li> "You're closer than you were yesterday."</li>
+                <li> "Your effort today will pay off tomorrow."</li>
+            </ul>
+        </div>
+    </div>
+    <div class="tabel1-contaner">
+
+        <div id="mot1" class="motivation">
+            <ul>
+                <li> "Success is the sum of small efforts repeated day in and day out.</li>
+                <li>"Don't watch the clock; do what it does. Keep going."</li>
+                <li>"Every moment is a fresh beginning."</li>
+                <li> "Believe you can and you're halfway there."</li>
+                <li> "Your future is created by what you do today, not tomorrow."</li>
+                <li> "The secret of getting ahead is getting started."</li>
+                <li> "Difficult roads often lead to beautiful destinations."</li>
+            </ul>
+        </div>
+        <div class="tabel2-container">
+            <table>
+                <caption class="table-caption">Time Table</caption>
+                <thead>
+                    <tr>
+                        <th>Days of week</th>
+                        <th>Day</th>
+                        <th>Night</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>saturday</td>
+                        <td>python basics</td>
+                        <td>data science</td>
+                    </tr>
+                    <tr>
+                        <td>sunday</td>
+                        <td>-</td>
+                        <td>deep learning</td>
+                    </tr>
+                    <tr>
+                        <td>monday</td>
+                        <td>intro for AI</td>
+                        <td>python basics</td>
+
+                    </tr>
+                    <tr>
+                        <td>tuesday</td>
+                        <td>deep learning</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>wednesday</td>
+                        <td>networking</td>
+                        <td>machine learning</td>
+                    </tr>
+                    <tr>
+                        <td>thursday</td>
+                        <td>data science</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>friday</td>
+                        <td colspan="2">Free</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer ------------------------------------------- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 30%;">
+                    <div class="logo">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <div class="txt">
+                            <span class="span1">Edu</span>
+                            <span class="hy">-</span>
+                            <span class="span2">Craft</span>
+                            <br>
+                            <span class="span3">Craft Your Future with Edu-Craft!</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px; color: var(--bg-lightc3);">
+                        <b>About
+                            us: </b>
+                    </p>
+                    <p style="color: var(--bg-lightc3); opacity: .6;">Empowering learners with innovative education.
+                        Explore, create,
+                        and excel
+                        with our engaging
+                        courses and resources.</p>
+                </div>
+
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>pages Links</h4>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>categories links</h4>
+                    <ul>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a target="_blank" class="facebook" href="https://www.facebook.com/"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a target="_blank" class="telegram" href="https://web.telegram.org/k/"><i
+                                class="uil uil-telegram-alt"></i></a>
+                        <a target="_blank" class="instagram" href="https://www.instagram.com/"><i
+                                class="uil uil-instagram"></i></a>
+                        <a target="_blank" class="linkedin" href="https://www.linkedin.com/feed/"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                    </div>
+                    <h4>Email us</h4>
+                    <a target="_blank" class="email-us" href="mailto: edu-craft@example.edu.eg"><i
+                            class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+                </div>
+            </div>
+        </div>
+        <p class="copywrite">
+            © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/0ede2dd129.js" crossorigin="anonymous"></script>
+    <!-- Footer ------------------------------------------- -->
+
+    <script>
+        const footer = document.getElementById('footer-style');
+        let dark = 0;
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                document.querySelector(".dark-lightbtn").innerHTML = `<img src="media/light_mode_FILL0_wght400_GRAD0_opsz24.png" >`;
+            }
+            else {
+                document.querySelector(".dark-lightbtn").innerHTML = `<img src="media/dark_mode_FILL0_wght400_GRAD0_opsz24.png" >`;
+            }
+            //<!-- for footer -->
+            dark = !dark;
+            if (dark)
+                footer.href = 'footer-dark.css';
+            else
+                footer.href = 'footer.css';
+        }  
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="share.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pop-up">
+        <div class="head">
+            <span class="share">share</span>
+            <div class="close-icon">
+                <button class="close-share">
+                    <a href="file.html">
+                        <i class='bx bx-x'></i>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="tail">
+            <p>share this link via</p>
+            <ul class="icons">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter'  ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://web.telegram.org/k/"><i class='bx bxl-telegram' ></i></a>
+            </ul>
+            <p>or copy link</p>
+            <div class="field">
+                <i class='bx bx-link'></i>
+                <input type="text" value="example.com/share-link">
+                <button class="copy">copy</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let 
+        popup = document.querySelector('.pop-up'),
+        Close=popup.querySelector('.close-icon'),
+        field=popup.querySelector('.field'),
+        input=popup.querySelector('input'),
+        copy= popup.querySelector('.copy');
+        copy.onclick = () =>{
+            input.select(); //select input value
+            if (document.execCommand("copy")){
+                field.classList.add("active");
+                copy.innerText ="copied";
+                setTimeout( () =>{
+                    field.classList.remove("active");
+                    copy.innerText ="copy";
+                    window.getSelection().removeAllRanges();
+                },3000);
+                //after 3sec remove active class and change button
+            }
+        };
+    </script>
+</body>
+</html>

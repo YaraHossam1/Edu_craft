@@ -1,0 +1,222 @@
+<html>
+
+<head>
+  <!-- footer stuff -->
+  <link href="https://cdn.jsdelivr.net/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  <link id="footer-style" rel="stylesheet" href="footer.css">
+  <!-- footer stuff -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Platypi:ital@0;1&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="notification.css">
+  <title>notification</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="notification">Notifications</h1>
+    <button class="dark-lightbtn" onclick="toggleDarkMode()">
+      <img src="media/dark_mode_FILL0_wght400_GRAD0_opsz24.png" alt="">
+    </button>
+  </div>
+
+
+  <div class="notification-container">
+    <div id="1st-div" class="single-notifi">
+      <div style="display: flex;">
+        <img class="notification-img" src="https://img-c.udemycdn.com/user/200_H/63079540_f68d.jpg" alt="Jun Wu">
+
+        <div class="notificationDetails">
+          <h3>JUN WU</h3>
+          <p class="notification-text">Jun Wu - Social Media Influencer made an announcement: Want more Followers,
+            Leads, and Sales today?I want to give you an unfair advantage, so...</p>
+          <p class="notification-time">3 days ago</p>
+        </div>
+      </div>
+    </div>
+    <div id="2nd-div" class="single-notifi">
+      <div style="display: flex;">
+        <img class="notification-img" src="https://img-c.udemycdn.com/user/200_H/33677720_a61d_2.jpg" alt="ACAI">
+
+        <div class="notificationDetails">
+          <h3>ACAI</h3>
+          <p class="notification-text">Academy of Computing & Artificial Intelligence made an announcement: If you're
+            passionate about AI and interested in earning additional income, c...</p>
+          <p class="notification-time">15 days ago</p>
+        </div>
+      </div>
+    </div>
+    <div id="3rd-div" class="single-notifi">
+      <div style="display: flex;">
+        <img class="notification-img" src="https://img-c.udemycdn.com/user/200_H/26018032_40e0_7.jpg" alt="youaccel">
+
+        <div class="notificationDetails">
+          <h3>YOUACCEL</h3>
+          <p class="notification-text">YouAccel Training made an announcement: The Importance of Learning Cloud
+            Computing and Full Stack DevelopmentMastering cloud computing a...</p>
+          <p class="notification-time">4 days ago</p>
+        </div>
+      </div>
+    </div>
+    <div id="4th-div" class="single-notifi">
+      <div style="display: flex;">
+        <img class="notification-img" src="https://img-c.udemycdn.com/user/200_H/63079540_f68d.jpg" alt="Jun Wu">
+
+        <div class="notificationDetails">
+          <h3>JUN WU</h3>
+          <p class="notification-text">Jun Wu - Social Media Influencer and 1 other made an announcement: Most people
+            are using AI just for fun.AI generated content that makes you $...</p>
+          <p class="notification-time">20 days ago</p>
+        </div>
+      </div>
+    </div>
+    <div id="5th-div" class="single-notifi">
+      <div style="display: flex;">
+        <img class="notification-img" src="https://img-c.udemycdn.com/user/200_H/148799094_3e59_6.jpg"
+          alt="hassan shoayb">
+
+        <div class="notificationDetails">
+          <h3>HASSAN SHOAYB</h3>
+          <p class="notification-text">Hassan Shoayb made an announcement: Dear Python Programming and Data Analysis
+            Enthusiasts,We'd like to invite you to subscribe to our YouTub...</p>
+          <p class="notification-time">28 days ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p id="demo"></p>
+  <div class="buttons">
+    <button id="but1" onclick="alert(`All Notification Marked As Read `)
+    
+    document.getElementById('1st-div').style.backgroundColor='white';
+    document.getElementById('2nd-div').style.backgroundColor='white';
+    document.getElementById('3rd-div').style.backgroundColor='white';
+    document.getElementById('4th-div').style.backgroundColor='white';
+    document.getElementById('5th-div').style.backgroundColor='white';
+    
+    
+    " class="mark-buttom">Mark all as read</button>
+
+
+
+    <button id="but2" onclick="
+      document.getElementById('1st-div').style.display='none';
+      document.getElementById('2nd-div').style.display='none';
+      document.getElementById('3rd-div').style.display='none';
+      document.getElementById('4th-div').style.display='none';
+      document.getElementById('5th-div').style.display='none';
+      alert(`All Notification Are Deleted`) ;
+      document.getElementById('but1').style.display='none';
+      document.getElementById('but2').style.display='none';
+
+      document.getElementById('demo').innerHTML='No Notifications Available ';
+
+    " style="width:115px;" class="mark-buttom">Delete all </button>
+  </div>
+
+
+  <!-- Footer ------------------------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col" style="width: 30%;">
+          <div class="logo">
+            <i class="fa-solid fa-house-laptop"></i>
+            <div class="txt">
+              <span class="span1">Edu</span>
+              <span class="hy">-</span>
+              <span class="span2">Craft</span>
+              <br>
+              <span class="span3">Craft Your Future with Edu-Craft!</span>
+            </div>
+          </div>
+          <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px; color: var(--bg-lightc3);">
+            <b>About
+              us: </b>
+          </p>
+          <p style="color: var(--bg-lightc3); opacity: .6;">Empowering learners with innovative education.
+            Explore, create,
+            and excel
+            with our engaging
+            courses and resources.</p>
+        </div>
+
+        <div class="footer-col" style="margin-left: 40px;">
+          <h4>pages Links</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" style="margin-left: 40px;">
+          <h4>categories links</h4>
+          <ul>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a target="_blank" class="facebook" href="https://www.facebook.com/"><i class="uil uil-facebook-f"></i></a>
+            <a target="_blank" class="telegram" href="https://web.telegram.org/k/"><i
+                class="uil uil-telegram-alt"></i></a>
+            <a target="_blank" class="instagram" href="https://www.instagram.com/"><i class="uil uil-instagram"></i></a>
+            <a target="_blank" class="linkedin" href="https://www.linkedin.com/feed/"><i
+                class="uil uil-linkedin-alt"></i></a>
+          </div>
+          <h4>Email us</h4>
+          <a target="_blank" class="email-us" href="mailto: edu-craft@example.edu.eg"><i
+              class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+        </div>
+      </div>
+    </div>
+    <p class="copywrite">
+      © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+    </p>
+  </footer>
+  <script src="https://kit.fontawesome.com/0ede2dd129.js" crossorigin="anonymous"></script>
+  <!-- Footer ------------------------------------------- -->
+
+  <script>
+    const footer = document.getElementById('footer-style');
+    let dark = 0;
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        document.querySelector(".dark-lightbtn").innerHTML = `<img src="media/light_mode_FILL0_wght400_GRAD0_opsz24.png" >`;
+      }
+      else {
+        document.querySelector(".dark-lightbtn").innerHTML = `<img src="media/dark_mode_FILL0_wght400_GRAD0_opsz24.png" >`;
+      }
+      //<!-- for footer -->
+      dark = !dark;
+      if (dark)
+        footer.href = 'footer-dark.css';
+      else
+        footer.href = 'footer.css';
+    }  
+  </script>
+
+</body>
+
+</html>

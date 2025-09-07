@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- footer stuff -->
+	<link href="https://cdn.jsdelivr.net/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+	<link id="footer-style" rel="stylesheet" href="footer.css">
+	<!-- footer stuff -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<title>Profile</title>
+</head>
+
+<body>
+	<section id="sidebar">
+		<a href="../../hager-ahmed/HTML/home.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Edu Craft</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="#">
+					<i class='bx bxs-user'></i>
+					<span class="text">Account</span>
+				</a>
+			</li>
+			<li>
+				<a href="../../yara/my-learning.html" id="my-courses-link">
+					<i class='bx bxs-book-open'></i>
+					<span class="text">My Courses</span>
+				</a>
+			</li>
+			<li>
+				<a href="../../hager-ahmed/HTML/home.html" target="_self" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu'></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<a href="../../nada/notification.html" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="images.jpg">
+			</a>
+		</nav>
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Profile</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Profile</a>
+						</li>
+						<li><i class='bx bx-chevron-right'></i></li>
+						<li>
+							<a class="active" href="../../hager-ahmed/HTML/home.html">Home</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<section id="account">
+				<div class="account-info">
+					<img src="images.jpg" alt="Profile Picture" class="profile-pic">
+					<form>
+						<label>Username</label>
+						<input type="text" placeholder="User">
+						<br>
+						<label>Email</label>
+						<input type="email" placeholder="user@example.com">
+						<br>
+						<label>Birth Date</label>
+						<input type="date" value="01/01/2000">
+						<br>
+						<label>Phone Number</label>
+						<input type="tel" placeholder="111-222-333">
+						<br>
+						<label>Country</label>
+						<select>
+							<option aria-placeholder="Country">Egypt</option>
+							<option value="Canada">Canada</option>
+							<option value="Egypt">Egypt</option>
+							<option value="France">France</option>
+							<option value="Germany">Germany</option>
+							<option value="India">India</option>
+							<option value="Japan">Japan</option>
+						</select>
+					</form>
+				</div>
+			</section>
+			<div id="my-courses-page" class="page">
+				<h2>My Courses</h2>
+				<ul>
+					<li>
+						<img src="intro to programming.png" alt="Course 1">
+						Introduction to Programming
+					</li>
+					<li>
+						<img src="html css.jpg" alt="Course 2">
+						Web Development with HTML and CSS
+					</li>
+					<li>
+						<img src="js language.png" alt="Course 3">
+						JavaScript Basics
+					</li>
+					<li>
+						<img src="py.png" alt="Course 4">
+						Python for Beginners
+					</li>
+					<li>
+						<img src="java.png" alt="Course 5">
+						Java Programming
+					</li>
+				</ul>
+			</div>
+			<!-- footer -->
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer-col" style="width: 30%;">
+							<div class="logo">
+								<i class="fa-solid fa-house-laptop"></i>
+								<div class="txt">
+									<span class="span1">Edu</span>
+									<span class="hy">-</span>
+									<span class="span2">Craft</span>
+									<br>
+									<span class="span3">Craft Your Future with Edu-Craft!</span>
+								</div>
+							</div>
+							<p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px;"><b>About us: </b></p>
+							<p style="color: var(--fg-lightc6)">Empowering learners with innovative education. Explore,
+								create,
+								and excel with our engaging courses and resources.</p>
+						</div>
+
+						<div class="footer-col" style="margin-left: 40px;">
+							<h4>pages Links</h4>
+							<ul>
+								<li><a href="#">link</a></li>
+								<li><a href="#">link</a></li>
+								<li><a href="#">link</a></li>
+								<li><a href="#">link</a></li>
+							</ul>
+						</div>
+						<div class="footer-col" style="margin-left: 40px;">
+							<h4>categories links</h4>
+							<ul>
+								<li><a href="#">category</a></li>
+								<li><a href="#">category</a></li>
+								<li><a href="#">category</a></li>
+								<li><a href="#">category</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>follow us</h4>
+							<div class="social-links">
+								<a class="facebook" href="#"><i class="uil uil-facebook-f"></i></a>
+								<a class="telegram" href="#"><i class="uil uil-telegram-alt"></i></a>
+								<a class="instagram" href="#"><i class="uil uil-instagram"></i></a>
+								<a class="linkedin" href="#"><i class="uil uil-linkedin-alt"></i></a>
+							</div>
+							<h4>Email us</h4>
+							<a class="email-us" href="#"><i class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+						</div>
+					</div>
+				</div>
+				<p class="copywrite">
+					© 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+				</p>
+			</footer>
+			<!-- end footer -->
+		</main>
+
+
+	</section>
+	<script src="script.js"></script>
+</body>
+
+</html>

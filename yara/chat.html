@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat/all.min.css" />
+    <link rel="stylesheet" href="chat.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>logo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo2">
+                <a class="link" href="../hager-ahmed/HTML/home.html">
+                    <i class="fa-solid fa-house-laptop"></i>
+                </a>
+                <h1>edu-craft discussion</h1>
+            </div>
+            <div class="all_icon">
+                <i class="fa-regular fa-moon" id="iconmoon"></i>
+                <div class="icon" onclick="toggleMenu()"><i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div id="menu" class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">setting</a></li>
+                        <li class="clear-chat" onclick="clearChat()"><a href="#">Clear chat</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="body" id="chat">
+            <div class="first_message">
+                <i class="fa-solid fa-circle-user"></i>
+                <p class="message">How can I help you</p>
+            </div>
+            <div class="second_message">
+                <p class="message user_message">Thanks for your help</p>
+                <i class='bx bx-user-circle' style="font-size: 35px; color:rgba(0,0,0,0.55);height: 40px;"></i>
+            </div>
+            <audio src="WhatsApp Audio 2024-04-22 at 7.40.09 PM.mpeg" controls></audio>
+        </div>
+        <div class="footer"></div>
+        <form>
+            <input class="input_message" type="text" name="" placeholder="Enter  your message">
+            <div class="mic"><i class="fa-solid fa-microphone"></i></div>
+            <button class="button">SEND</button>
+        </form>
+    </div>
+    <script>
+        var icon = document.getElementById("iconmoon");
+        var isDarkMode = false;
+
+        icon.onclick = function () {
+            isDarkMode = !isDarkMode;
+            if (isDarkMode) {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            } else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
+            document.querySelector(".container").classList.toggle("container-dark");
+            document.querySelector("body").classList.toggle("body-dark");
+            document.querySelector(".logo2").classList.toggle("logo2-dark");
+            document.querySelector(".all_icon").classList.toggle("all_icon_dark");
+            document.querySelector(".body").classList.toggle("body_dark");
+            document.querySelector("form input").classList.toggle("input_dark");
+            document.querySelector("form").classList.toggle("form_dark");
+            document.querySelector(".button").classList.toggle("button_dark");
+            document.querySelector(".mic").classList.toggle("mic_dark");
+            document.querySelector(".message").classList.toggle("message_dark");
+            document.querySelector(".user_message").classList.toggle("user_message_dark");
+            document.querySelector("audio").classList.toggle("oudio_dark");
+            document.querySelector(".link").classList.toggle("link_dark");
+            document.querySelector(".body").classList.toggle("bodyy-dark");
+
+        }
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+        function clearChat() {
+            var chat = document.getElementById("chat");
+            chat.innerHTML = ""; // Clear chat content
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Course</title>
+  <!-- template css file -->
+  <link rel="stylesheet" href="css/uploadCourse.css" />
+  <!-- render all elements normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- font awesome library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- start header -->
+  <div class="header">
+    <div class="left">
+      <abbr title="Back"><a href="categories.html"><i class="fa-solid fa-arrow-left"></i></a></abbr>
+    </div>
+
+    <div class="right">
+      <button class="rightbut">Preview</button>
+      <button class="rightbut">Draft</button>
+      <button class="dark-light" onclick="toggleDarkTheme()">
+        <i class="fa-solid fa-moon" id="modeIcon"></i>
+      </button>
+      <button class="settings" onclick="toggleSidebar()">
+        <abbr title="Settings"><i class="fa-solid fa-gear"></i></abbr>
+      </button>
+    </div>
+  </div>
+  <!-- end header -->
+  <!-- start sidebar -->
+  <div class="sidebar" id="sidebar">
+    <img src="imagestemp/OIP.jpeg" alt="userimage" />
+    <ul>
+      <li><a href="#">General</a></li>
+      <li><a href="../hager-hisham/Profile/index.html">Account</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="../nada/notification.html">Notifications</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Security</a></li>
+    </ul>
+    <span class="close-icon" onclick="toggleSidebar()"><i class="fa-solid fa-circle-xmark"></i></span>
+    <button class="dark-light" onclick="toggleDarkTheme()">
+      <i class="fa-solid fa-moon" id="modeIcon"></i>
+    </button>
+  </div>
+  <!-- end sidebar -->
+  <!-- start main -->
+  <section>
+    <div class="course">
+      <h1>Create a Course</h1>
+      <p class="desc">
+        As you complete this section, think about creating a compelling Course
+        Landing Page that demonstrates why someone would want to enroll in
+        your course.
+      </p>
+
+      <div class="sec">
+        <h3><u>Course title</u></h3>
+        <input type="text" placeholder="insert your course title" />
+        <p class="note">
+          Your title should be informative and optimized for search.
+        </p>
+      </div>
+
+      <div class="sec">
+        <h3><u>Course subtitle</u></h3>
+        <input type="text" placeholder="insert your course subtitle" />
+        <p class="note">
+          Mention the important areas that are covered in your course.
+        </p>
+      </div>
+
+      <div class="sec">
+        <h3><u>Course description</u></h3>
+        <input class="description" type="text" placeholder="insert your course description" />
+        <p class="note">Description should have at least 200 words.</p>
+      </div>
+      <div class="sec">
+        <h3><u>Basic Info</u></h3>
+        <div class="selections">
+          <select name="language" id="">
+            <option>- Select Language -</option>
+            <option>English</option>
+            <option>Arabic</option>
+            <option>French</option>
+          </select>
+          <select name="level" id="">
+            <option>- Select Level -</option>
+            <option>Beginner Level</option>
+            <option>Intermediate Level</option>
+            <option>Expert Level</option>
+            <option>All Levels</option>
+          </select>
+          <select id="category" onchange="showSubcategory()">
+            <option value="">Select a category</option>
+            <option value="1">Data Science</option>
+            <option value="2">Development</option>
+            <option value="3">IT & Software</option>
+          </select>
+
+          <select id="subcategory">
+            <option value="">Select a subcategory</option>
+            <option value="1.1">Programming Languages</option>
+            <option value="1.2">Mobile Development</option>
+            <option value="1.3">Web Development</option>
+            <option value="1.4">Game Development</option>
+            <option value="1.5">Software Engineering</option>
+          </select>
+        </div>
+      </div>
+      <div class="sec">
+        <h3><u>Course image</u></h3>
+        <div class="courseimg">
+          <img src="imagestemp/placeholder.jpg" alt="" />
+          <div class="pcourseimg">
+            <div class="uploadimg">
+              <p>No file selected</p>
+              <button class="uploadbut">
+                Upload File<i class="fa-solid fa-cloud-arrow-up"></i>
+              </button>
+            </div>
+            <p class="note">
+              Upload your course image here. It must meet our course image
+              quality standards to be accepted. Important guidelines: 750x422
+              pixels; .jpg, .jpeg,. gif, or .png. no text on the image.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sec">
+        <h3><u>Pricing:</u><span> Set a price for your course</span></h3>
+        <p class="price-desc">
+          Please select the currency and the price tier for your course. If
+          you’d like to offer your course for free, it must have a total video
+          length of less than 2 hours. Also, courses with practice tests can
+          not be free.
+        </p>
+
+        <div class="pricesec">
+          <div class="currency">
+            <p>Currency</p>
+            <select>
+              <option>- Select -</option>
+              <option>EGP</option>
+              <option>USD</option>
+              <option>EUR</option>
+            </select>
+          </div>
+          <div class="price">
+            <p>Price</p>
+            <input type="text" placeholder="enter price" />
+          </div>
+        </div>
+      </div>
+      <div class="savebut">
+        <button class="save">Save</button>
+        <button class="uploadbut">
+          Upload Course<i class="fa-solid fa-cloud-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- end main -->
+  <!-- start footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col" style="width: 30%">
+          <div class="logo-footer">
+            <i class="fa-solid fa-house-laptop"></i>
+            <div class="txt">
+              <span class="span1-footer">Edu</span>
+              <span class="hy-footer">-</span>
+              <span class="span2-footer">Craft</span>
+              <br />
+              <span class="span3-footer">Craft Your Future with Edu-Craft!</span>
+            </div>
+          </div>
+          <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px">
+            <b>About us: </b>
+          </p>
+          <p style="color: var(--fg-lightc6)">
+            Empowering learners with innovative education. Explore, create,
+            and excel with our engaging courses and resources.
+          </p>
+        </div>
+
+        <div class="footer-col" style="margin-left: 40px">
+          <h4>pages Links</h4>
+          <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" style="margin-left: 40px">
+          <h4>categories links</h4>
+          <ul>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+            <li><a href="#">category</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="telegram" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <h4>Email us</h4>
+          <a class="email-us" href="#"><i class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+        </div>
+      </div>
+    </div>
+    <p class="copywrite">
+      © 2024 EduCraft. All rights reserved. Explore innovative education and
+      shape your future with us.
+    </p>
+  </footer>
+  <!-- end footer -->
+  <script>
+    const icon = document.getElementById("modeIcon");
+    function toggleDarkTheme() {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      } else {
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      }
+    }
+
+    function showSubcategory() {
+      var categorySelect = document.getElementById("category");
+      var subcategory = document.getElementById("subcategory");
+      if (categorySelect.value !== "") {
+        subcategory.style.display = "block";
+      } else {
+        subcategory.style.display = "none";
+      }
+    }
+
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

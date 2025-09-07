@@ -1,0 +1,279 @@
+:root {
+  --color1: #E7D8F7;
+  --color2: #cfb1ee;
+  --color3:#B88AE6;
+  --color4: #a062dd;
+  --color5: #883bd5;
+  --color6: #7014cc;
+  --color7: #631db0;
+  --color8: #552594;
+  --color9: #482e77;
+  --color10: #3a365b;
+  --color11:#300b53 ;
+}
+.header {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 24%;
+  color: rgb(255, 255, 255);
+  background-color:var(--color11);
+  font-size: 22px;
+}
+.header-dark{
+  background-color:#1b132b;
+}
+body{
+  background-color: white;
+}
+.body_dark{
+  background-color:#39295e;
+}
+h2{
+  color: #000000;
+}
+.h2_dark{
+  color: white;
+}
+.li {
+  float: left;
+}
+
+
+
+.ul {
+  margin: 0;
+  padding: 10px 23%;
+  overflow: hidden;
+  background-color:var(--color11);
+  font-size: 20px;
+  font-family: strong;
+
+}
+.ul_dark{
+  background-color:#1b132b;
+}
+
+.li a {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.li a::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  width: 0px;
+  height: 3px;
+  background-color: white;
+  bottom: -7px;
+}
+
+.li a:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.li a:hover::before {
+  width: 80%;
+}
+
+
+.big_search{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 20%;
+}
+
+.ul i{
+     background-color: #ccc;
+     float: left;
+      padding: 10.8px;
+      width: 38px;
+      border: none;
+      margin-top: -1.8px;
+      margin-right: 0px;
+      font-size: 17px;
+      display: block;
+      border: 1px solid #ccc;
+}
+.search_input {
+  position: relative;
+  float: right;
+  height: 35px;
+  padding: 20px;
+  border: none;
+}
+
+
+.ul i:hover{
+  background-color: #a6a1a1;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #300b53;
+}
+.nav_dark{
+  background-color: #1b132b;
+}
+#iconmoon{
+  font-size: 30px;
+  position: absolute;
+  left: 20%;
+  bottom: 16px;
+  color: white;
+}
+
+
+.center_text{
+  color: black;
+  font-size: 28px;
+  text-transform:capitalize ;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.courses{
+  display: flex; 
+  flex-wrap:wrap;
+  justify-content:space-between;
+  
+}
+
+.roww img{
+  width: 100%; 
+  height: 50%;
+  transition: transform .4s;
+  border-radius: 10px;
+}
+.roww{
+  width:calc(22% - 10px);
+  padding: 0px;
+  height: auto;
+  cursor: pointer;
+  
+}
+.big_row1{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  
+}
+.big_row2{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.big_row3{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+.course_text{
+   color: black;
+}
+.course_text_dark{
+  color: white;
+}
+.all_select{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+.select{
+  height: 50px;
+ text-align: center;
+ border-radius: 8px;
+ background-color: #300b53;
+ color:white;
+}
+.select:hover{
+  background-color:white;
+  color:black;
+}
+.select_dark:hover{
+  background-color: #1b132b;
+  color: white;
+}
+.select_dark{
+  background-color: white;
+  color: #000000;
+}
+.paragraph{
+  color: gray
+}
+.paragraph_dark{
+  color: white;
+}
+
+.all_web{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+ 
+}
+.container_body{
+  width: 75%;
+}
+.roww img:hover{
+  box-shadow: 5px 5px 3px gray;
+  transform: scale(1.1);
+
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: var(--myfont);
+}
+
+:root {
+  /* todo global colors with light &dark mode */
+  --bg-lightc0:   rgb(253, 253, 253);
+  --bg-light:     #f6f2fa;
+  --bg-dark:      #1c053a;
+  --bg-lightc2:   #e8d0ff;
+  --bg-lightc3:   #B88AE6;
+  --bg-lightc4:   #A062DD;
+  --fg-lightc5:   #631DB0;
+  --fg-lightc6:   #552594;
+  --fg-lightc6l:  #55259430;
+  --fg-lightc6lc2:#55259480;
+  --fg-lightc7:   #320074;
+  --fg-lightc7l:  rgba(50, 0, 116, 0.726);
+  --fg-lightc8:   #1c053a;
+  --fg-contrast: #FF5D73;
+  --fg-contrastc: #f28d9a;
+  --heart-color:  #c34a5c;
+  --grad-light1: linear-gradient(37deg, var(--fg-lightc5) 0%, var(--bg-lightc4) 100%);
+  --myfont: system-ui, -apple-system, BlinkMacSystemFont;
+  --mx-width: 1600px;
+  --facebook-main: #1877F2;
+  --instagram-main: #E1306C;
+  --linkedin-main: #0077B5;
+  --x-main: #000000;
+  --telegram-main: #24A1DE;
+  /* logo color palette */
+  --logo-light: #1c053a;
+  --span12-light: #631DB0; 
+  --hy-light: #1c053a;
+  --span3-light: #1c053a;
+
+  --logo-dark: #f6f2fa;
+  --span12-dark: #A062DD;
+  --hy-dark: #f6f2fa;
+  --span3-dark: #B88AE6;
+}
+
+.card.hide{
+  display: none;
+}
+

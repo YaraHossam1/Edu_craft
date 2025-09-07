@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <!-- template css file -->
+    <link rel="stylesheet" href="css/categories.css">
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="header">
+
+        <!-- start logo -->
+        <div class="logo">
+            <i class="fa-solid fa-house-laptop"></i>
+            <div class="txt">
+                <span class="span1">Edu</span>
+                <span class="hy">-</span>
+                <span class="span2">Craft</span>
+                <br>
+                <span class="span3">Craft Your Future with Edu-Craft</span>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/0ede2dd129.js" crossorigin="anonymous"></script>
+
+        <!-- end logo -->
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <button class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="dark-light" onclick="toggleDarkTheme()"><i class="fa-solid fa-moon" id="modeIcon"></i></button>
+        <ul class="list">
+
+            <li class="links"><a href="../hager-ahmed/HTML/home.html">Home</a></li>
+            <li class="links"><a href="../yara/my-learning.html">My Courses</a></li>
+            <li class="links"><a href="../hania/categories.html">Categories</a></li>
+            <li class="links"><a href="uploadCourse.html">Upload Course</a></li>
+            <li class="links"><a href="../hager-ahmed/HTML/home.html">About</a></li>
+            <li class="links"><a href="#user"><abbr title="My Profile">
+                        <i class="fa-solid fa-circle-user" onclick="toggleSidebar()"></i></abbr></a></li>
+
+        </ul>
+
+
+    </div>
+    <!-- end header -->
+    <!-- start sidebar -->
+    <div class="sidebar" id="sideBar">
+        <img src="imagestemp/OIP.jpeg" alt="userimage" />
+        <ul>
+            <li><a href="../hager-ahmed/HTML/home.html">Home</a></li>
+            <li><a href="../hager-hisham/Profile/index.html">Account</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="../nada/notification.html">Notifications</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+        </ul>
+        <span class="close-icon" onclick="toggleSidebar()"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <!-- end sidebar -->
+    <!-- start popup -->
+    <div class="popup" id="popup">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>Added to Cart!</p>
+        <button type="button" onclick="closePopup()">Ok</button>
+        <button type="button"><i class="fa-solid fa-cart-shopping"></i>View Cart</button>
+    </div>
+    <!-- end popup -->
+    <!-- start main -->
+    <div class="cont">
+        <div class="search">
+            <p class="sort">Sort by:</p>
+            <select id="select-sort">
+                <option value="mostPopular">Most Popular</option>
+                <option value="new">New</option>
+            </select>
+        </div>
+        <!-- start data science page -->
+        <h2>Data Science Courses</h2>
+        <div class="page">
+            <div class="course">
+                <img src="imagestemp/datasci.jpeg" alt="">
+                <p class="coursetitle">The Beginner's Guide to Artificial Intelligence
+
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/Programming web banner stock vector_ Illustration of network - 164823124.jpeg"
+                    alt="">
+                <p class="coursetitle">Data Science: Modern Deep Learning in Python
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/Machine Learning.jpeg" alt="">
+                <p class="coursetitle">Machine Learning - from Basics to Advanced
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/a52d8278-8ed1-473e-9f31-5ae048862b56.jpeg" alt="">
+                <p class="coursetitle">Python for Data Science and Machine Learning
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+        </div>
+        <!-- end data science page -->
+
+        <!-- start web development page -->
+        <h2>Web Development Courses</h2>
+        <div class="page">
+            <div class="course">
+                <img src="imagestemp/Premium Vector _ Software development, programming language, coding.jpeg" alt="">
+                <p class="coursetitle">HTML for Beginners
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/Poll_ should CSS become more like a programming language_.jpeg" alt="">
+                <p class="coursetitle">CSS Full Course
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/Premium Vector _ App development concept with phone and coding languages.jpeg"
+                    alt="">
+                <p class="coursetitle">Introduction to JS
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/PHP Tutorial.jpeg" alt="">
+                <p class="coursetitle">PHP Certification Course
+                <div class="price">
+                    <b>EGP399</b>
+                    <em><del>EGP599</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+        </div>
+        <!-- end web development page -->
+        <!-- start mobile devlopment page -->
+        <h2>Mobile Development Courses</h2>
+        <div class="page mobdev">
+            <div class="course">
+                <img src="imagestemp/Premium Vector _ App development concept with phone and coding languages.jpeg"
+                    alt="">
+                <p class="coursetitle">Flutter & Dart: Complete App Development Course
+                <div class="price">
+                    <b>EGP999</b>
+                    <em><del>EGP1,299.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/Cost Of Developing A Mobile App in USA _ Code Brew Labs.jpeg" alt="">
+                <p class="coursetitle">Android Java Masterclass - Become an App Developer
+                <div class="price">
+                    <b>EGP1,499</b>
+                    <em><del>EGP2,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+            <div class="course">
+                <img src="imagestemp/e334c930-cdbb-4fb4-9ac3-a218317493d7.jpeg" alt="">
+                <p class="coursetitle">iOS 10 & Swift 3: From Beginner to Paid Professional
+                <div class="price">
+                    <b>EGP799</b>
+                    <em><del>EGP1,099.99</del></em>
+                </div>
+                <div class="addfavs">
+                    <button type="submit" class="addtocart" onclick="openPopup()">Add to Cart</button>
+
+                    <i class="fa-regular fa-heart hearticon"></i>
+                </div>
+
+                <button class="buynow">Buy Now</button>
+                </p>
+            </div>
+        </div>
+        <!-- end mobile devlopment page -->
+
+
+        <!-- start footer -->
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 30%;">
+                    <div class="logo-footer">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <div class="txt">
+                            <span class="span1-footer">Edu</span>
+                            <span class="hy-footer">-</span>
+                            <span class="span2-footer">Craft</span>
+                            <br>
+                            <span class="span3-footer">Craft Your Future with Edu-Craft!</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px;"><b>About us: </b></p>
+                    <p style="color: var(--fg-lightc6)">Empowering learners with innovative education. Explore, create,
+                        and excel
+                        with our engaging
+                        courses and resources.</p>
+                </div>
+
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>pages Links</h4>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>categories links</h4>
+                    <ul>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="telegram" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <h4>Email us</h4>
+                    <a class="email-us" href="#"><i class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+                </div>
+            </div>
+        </div>
+        <p class="copywrite">
+            © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+        </p>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+        // start dark mode
+        var icon = document.getElementById('modeIcon');
+        function toggleDarkTheme() {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+        // end dark mode
+        // show sidebar
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sideBar");
+            sidebar.classList.toggle("active");
+        }
+        // change order function
+        function changeOrder(order) {
+            var courses = document.querySelectorAll('.course');
+
+            if (order === 'mostPopular') {
+                courses.forEach((course, index) => course.style.order = index);
+            } else if (order === 'new') {
+                courses.forEach((course, index) => course.style.order = -index);
+            } else {
+                courses.forEach(course => course.style.order = 0);
+            }
+        }
+
+        document.getElementById('select-sort').addEventListener('change', function () {
+            changeOrder(this.value);
+        });
+        //start popup
+        let popup = document.getElementById("popup");
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+        //end popup
+
+        var hearts = document.querySelectorAll('.hearticon');
+        hearts.forEach(function (heart) {
+            heart.onclick = function () {
+                hearts.forEach(function (heart) {
+                    heart.classList.remove('clicked');
+                });
+                heart.classList.add('clicked');
+                toggleIcon();
+            };
+        });
+
+        function toggleIcon() {
+            var clicked = document.querySelector('.hearticon.clicked');
+
+            if (clicked.classList.contains('fa-regular')) {
+                clicked.classList.remove('fa-regular');
+                clicked.classList.add('fa-solid');
+            } else {
+                clicked.classList.remove('fa-solid');
+                clicked.classList.add('fa-regular');
+            }
+        }
+
+        // to course page, enrollments
+        const buy = document.querySelectorAll('.buynow');
+        const tocourse = document.querySelectorAll('.course img');
+        // console.log(buy);
+        for (let i = 0; i < buy.length; i++) {
+            let course = buy[i];
+            course.addEventListener('click', function () {
+                window.location.href = '../mohannad/payment-enrollment/main.html';
+            });
+        }
+        for (let i = 0; i < tocourse.length; i++) {
+            let course = tocourse[i];
+            course.addEventListener('click', function () {
+                window.location.href = '../mohannad/view-course/main.html';
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="leave-rating.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <meta name="rate" value="view-port" content="width=device-width, initial-scale=1.0">
+    <title>reviews</title>
+</head>
+<body>
+    <div class="container">
+        <div class="star-widget">
+            <input class="rate-1" type="radio" id="rate-1" name="rate" value="rate-1">
+            <label for="rate-1" class="fa fa-star"></label>
+            <input class="rate-2" type="radio" id="rate-2" name="rate" value="rate-2">
+            <label for="rate-2" class="fa fa-star"></label>
+            <input class="rate-3" type="radio" id="rate-3" name="rate" value="rate-3">
+            <label for="rate-3" class="fa fa-star"></label>
+            <input class="rate-4" type="radio" id="rate-4" name="rate" value="rate-4">
+            <label for="rate-4" class="fa fa-star"></label>
+            <input class="rate-5" type="radio" id="rate-5" name="rate" value="rate-5">
+            <label for="rate-5" class="fa fa-star"></label>
+            <input class="rate-6" type="radio" id="rate-6" name="rate" value="rate-6" checked>
+        </div>
+        <header></header>
+        <label for="rate-6"> press here to deselect</label>
+        <form action="#">
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe Your Experience..."></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">POST</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        let allInput=document.querySelectorAll("input");
+        allInput.forEach(function (ele){
+            ele.onclick=function (){
+                // loop on all input and remove checked attribute
+                allInput.forEach(function (ele){
+                    ele.removeAttribute("checked","");
+                });
+                //the clicked input will have attribute checked
+                this.setAttribute("checked","");
+            }
+        });
+        
+        let findSelected = () => {
+            let selected = document.querySelector("input:checked").value;
+            let content="I JUST HATE IT 😠";
+        if(selected ==="rate-5"){
+            document.querySelector("header").innerText=content;
+        }
+        else if(selected ==="rate-4"){
+            content="I DON'T LIKE IT 😒";
+            document.querySelector("header").innerHTML=content;
+        } 
+        else if(selected ==="rate-3"){
+            content="IT IS AWESOME 😄";
+            document.querySelector("header").innerHTML=content;
+        } 
+        else if(selected ==="rate-2"){
+            content="I LIKED IT 😍";
+            document.querySelector("header").innerHTML=content;
+        } 
+        else if(selected ==="rate-1"){
+            content="I LOVED IT 🥰";
+            document.querySelector("header").innerHTML=content;
+        } 
+        else {
+            content="";
+            document.querySelector("header").innerHTML=content;
+        }
+        };
+        allInput.forEach(radioBtn => {
+            radioBtn.addEventListener("change",findSelected);
+        });
+    </script>
+</body>
+</html>

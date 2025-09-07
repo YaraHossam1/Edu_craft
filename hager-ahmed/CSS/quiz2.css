@@ -1,0 +1,234 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1c053a;
+    justify-content: center;
+}
+
+:root {
+    /* todo global colors with light &dark mode */
+    --bg-lightc0: rgb(253, 253, 253);
+    --bg-light: #f6f2fa;
+    --bg-dark: #1c053a;
+    --bg-lightc2: #e8d0ff;
+    --bg-lightc3: #b88ae6;
+    --bg-lightc4: #a062dd;
+    --fg-lightc5: #631db0;
+    --fg-lightc6: #552594;
+    --fg-lightc6l: #55259430;
+    --fg-lightc6lc2: #55259480;
+    --fg-lightc7: #320074;
+    --fg-lightc7l: rgba(50, 0, 116, 0.726);
+    --fg-lightc8: #1c053a;
+    --fg-contrast: #ff5d73;
+    --fg-contrastc: #f28d9a;
+    --heart-color: #c34a5c;
+    --grad-light1: linear-gradient(
+      37deg,
+      var(--fg-lightc5) 0%,
+      var(--bg-lightc4) 100%
+    );
+    --myfont: system-ui, -apple-system, BlinkMacSystemFont;
+    --mx-width: 1600px;
+    --facebook-main: #1877f2;
+    --instagram-main: #e1306c;
+    --linkedin-main: #0077b5;
+    --x-main: #000000;
+    --telegram-main: #24a1de;
+    /* logo color palette */
+    --logo-light: #1c053a;
+    --span12-light: #631db0;
+    --hy-light: #1c053a;
+    --span3-light: #1c053a;
+  
+    --logo-dark: #f6f2fa;
+    --span12-dark: #a062dd;
+    --hy-dark: #f6f2fa;
+    --span3-dark: #b88ae6;
+  }
+
+.darkmode-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left:10px;
+  top:10px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--bg-dark);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Add transition for background color */
+}
+
+.darkmode-button .sun {
+  width: 50%;
+  height: 50%;
+  background-color: var(--bg-lightc3);
+  border: solid 2px var(--bg-dark);
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color, border-color, scale 0.3s ease-in-out;
+}
+
+.darkmode-button .moon {
+  content: "";
+  position: absolute;
+  background-color: var(--bg-light);
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  top: -33%;
+  left: 91%;
+  /* transform: translate(-104%, 96%); */
+  z-index: 3;
+  transition: transform 0.4s ease-out;
+}
+
+.darkmode-button .lines {
+  position: absolute;
+  width: 80%;
+  height: 4%;
+  border-radius: 10px;
+  background-color: var(--bg-light);
+  transition: all 0.3s ease-in-out;
+  animation: rotate 10s linear 0s infinite running;
+}
+.darkmode-button .l2 {
+  transform: rotate(90deg);
+}
+.darkmode-button .l3 {
+  width: 70%;
+  transform: rotate(45deg);
+}
+.darkmode-button .l4 {
+  width: 70%;
+  transform: rotate(135deg);
+}
+
+@keyframes rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.darkmode-button.dark {
+  background-color: var(--bg-light);
+}
+.darkmode-button .lines.dark {
+  width: 0%;
+}
+
+.darkmode-button .sun.dark {
+  background-color: var(--bg-dark);
+  border-color: transparent;
+  scale: 1.2;
+}
+
+.darkmode-button .moon.dark {
+  transform: translate(-104%, 96%);
+}
+
+.container {
+    position: relative;
+    width: 42.5rem;
+    padding: 30px;
+    margin: auto;
+    background-color: #ebebeb;
+    box-shadow: 8px 8px #000000;
+    border-radius: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color:#1c053a;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+.Radio {
+    accent-color: #1c053a;
+    height: 1.2em;
+    width: 1.2em;
+    padding: 0 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1c053a;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 18px;
+    transition: ease 0.3s;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #631db0;
+}
+
+.result {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.hide {
+    display: none;
+}
+
+strong {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.output {
+    font-size: 1.2em;
+}
+
+.correct {
+    color: rgb(5, 156, 5);
+    font-weight: bold;
+}
+
+.wrong {
+    color: rgb(214, 4, 4);
+    font-weight: bold;
+}
+
+.back-to-course {
+  color: var(--bg-light);
+  font-family: var(--myfont);
+  text-decoration: none;
+  font-size: 16pt;
+  font-weight: 600;
+  background-color: var(--bg-dark);
+  border-radius: 15px;
+  padding: 10px;
+  transition: all .2s ease;
+}
+
+.back-to-course:hover {
+  background-color: var(--fg-lightc5);
+}

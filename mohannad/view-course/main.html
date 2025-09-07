@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- link for Icons' API to use font icons -->
+    <link href="https://cdn.jsdelivr.net/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <title>C++ Course for Beginners | John Smith, Sarah Lee</title>
+    <link id="dark-style" rel="stylesheet" href="style.css">
+    <!-- <link id="dark-style" rel="stylesheet" href="style-dark.css"> -->
+</head>
+
+
+
+<body class="body">
+    <!-- header placeholder -->
+    <div class="header"></div>
+    <!-- background in-focus div -->
+    <div class="focus-block"></div>
+    <!-- for go to top icon -->
+    <div id="scroll-to-top" class="scroll-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </div>
+    <!-- Contains the subheader for returning back to home, purchase or add to fav. || cart -->
+    <div class="fixediv">
+        <a href="../../hager-ahmed/HTML/home.html" style="text-decoration: none;" class="buttons back">
+            <i class='bx bx-arrow-back'></i>
+            <p class="open-sans">Back To Home</p>
+        </a>
+        <div class="buttons fav">
+            <!-- <i class='bx bxs-heart without-border'></i> -->
+            <i id="add-to-fav1" class='bx bx-heart'></i>
+            <p class="open-sans">Add to favorites</p>
+        </div>
+        <div class="buttons cart">
+            <i class='bx bx-cart-add'></i>
+            <p class="open-sans">Add to cart</p>
+        </div>
+        <a href="../payment-enrollment/main.html" style="text-decoration: none;" class="buttons purch">
+            <i class='bx bx-credit-card bx-tada'></i>
+            <p class="open-sans">Complete purchase</p>
+        </a>
+        <div class="darkmode-button">
+            <div class="l1 lines"></div>
+            <div class="l2 lines"></div>
+            <div class="l3 lines"></div>
+            <div class="l4 lines"></div>
+            <div class="sun"></div>
+            <div class="moon"></div>
+        </div>
+    </div>
+    <!-- preview course sectin -->
+    <div class="prev">
+        <div class="prev-container">
+            <div class="prev-box">
+                <div class="boximage">
+                    <video src="media/CPP_Demo_video.mp4" poster="media/CPP-Language.png" alt="c++ course" controls>
+                        <i class='bx bx-play-circle'></i>
+                </div>
+            </div>
+            <div class="course-info">
+                <p class="name">
+                    <b>C++ Course for Beginners</b>
+                </p>
+                <p class="des"> <i class='bx bx-edit-alt'></i> Learn the basics of C++ programming, covering variables,
+                    control structures, functions, OOP concepts, and file handling. Gain hands-on experience with coding
+                    exercises to build foundational programming skills.</p>
+                <div class="info">
+                    <div class="dura info-box"><i class='bx bx-time-five'></i>
+                        <p>4h 38m</p>
+                    </div>
+                    <div class="lang info-box"><i class='bx bx-globe'></i></i></i>
+                        <p>EN | AR</p>
+                    </div>
+                    <div class="vids info-box"><i class='bx bx-video-plus'></i></i>
+                        <p>28 Videos</p>
+                    </div>
+                    <div class="stud info-box"><i class='bx bxs-user-check'></i></i>
+                        <p>3,435 students</p>
+                    </div>
+                </div>
+                <p class="instructor"> <i class='bx bx-user'></i> By: <span class="instr1 link-hover">John Smith
+                    </span>|
+                    <span class="instr2 link-hover">Sarah Lee</span>
+                </p>
+                <!-- price -->
+                <p class="price" style="font-family: var(myfont); font-size: 1.3em;">
+                    <b>Price: </b>
+                    <b>
+                        <u>199</u>
+                        <del style="color: rgba(0, 0, 0, .5); font-weight: 400;">399</del>
+                        <i class='bx bx-pound' style="font-size: .9em; font-weight: 600;"></i>
+                        <span class="on-sale">On sale!</span>
+                    </b>
+                <div class="left-on-sale"
+                    style="margin: 10px 0px 0px 15px; font-weight: 200; color: rgb(179, 5, 5); font-family: inherit;">
+                    <i class='bx bx-timer' style="font-size: 1.3em;"></i>
+                    <b style="font-weight: 700;">23 hours</b> left at this price!
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="enroll">
+            <div class="rating">
+                <div class="stars" style="display: inline-block;">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <span class="rating-txt">3.5/5 by <span class="rating-num">1,078 students</span></span>
+            </div>
+            <a href="../payment-enrollment/main.html" style="text-decoration: none;">
+                <button class="enroll-button">
+                    <p class="txt">Enroll Now!</p>
+                </button>
+            </a>
+        </div>
+        <div class="additional-buttons">
+            <ul class="button-list">
+                <li class="share view-modal">
+                    <i class="uil uil-share"></i>
+                </li>
+                <li class="add-to-fav">
+                    <i id="add-to-fav2" class="uil uil-heart-medical"
+                        style="position: absolute; top: 5px; left: 15%;"></i>
+                </li>
+                <li class="write-a-comment">
+                    <i class='bx bx-comment-dots'></i></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr style="width: 75%; max-width: var(--mx-width); border: 2px dashed var(--bg-lightc2); margin: 10px 0px;">
+
+    <!-- details section -->
+    <div class="details-box new-box">
+        <h1> <i class='bx bxs-receipt'></i> Course Overview: </h1>
+        <div class="details padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Whom is this course designed to?
+            </h2>
+            <div class="hidden-by-default">
+                <p>Join us for an immersive introduction to C++ programming. This course is
+                    designed for beginners who want
+                    to learn the basics of C++ and build a strong foundation in programming.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="course-obj padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Course Objectives
+            </h2>
+            <div class="hidden-by-default">
+                <ul>
+                    <li>Understand the fundamentals of C++ programming language.</li>
+                    <li>Learn how to write and execute C++ programs.</li>
+                    <li>Explore basic programming concepts such as variables, data types, loops, and functions.</li>
+                    <li>Gain insight into object-oriented programming (OOP) principles.</li>
+                    <li>Develop problem-solving skills using C++.</li>
+                    <li>Prepare for more advanced topics in C++ programming.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="course-content padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Course Curriculum
+            </h2>
+            <div class="details padding20 hidden-by-default">
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Introduction to C++ and
+                    Its Applications
+                </h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Overview of C++ programming language</li>
+                        <li>History and significance of C++</li>
+                        <li>Features and advantages of using C++</li>
+                        <li>Setting up the development environment</li>
+                        <li>Basic structure of a C++ program</li>
+                        <li>Writing and executing a simple C++ program</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Data Types, Variables,
+                    and Constants</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Fundamental data types in C++ (int, float, double, char, etc.)</li>
+                        <li>Variables and memory allocation</li>
+                        <li>Constants and literals in C++</li>
+                        <li>Type modifiers (signed, unsigned, short, long)</li>
+                        <li>Declaration and initialization of variables</li>
+                        <li>Understanding scope and lifetime of variables</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Control Structures:
+                    Decision-Making and
+                    Looping</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Conditional statements (if, else if, else)</li>
+                        <li>Switch statement for multi-way branching</li>
+                        <li>Iterative statements (for loop, while loop, do-while loop)</li>
+                        <li>Loop control statements (break, continue)</li>
+                        <li>Nested loops and nested control structures</li>
+                        <li>Best practices for effective use of control structures</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Functions and Parameter
+                    Passing</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Defining and calling functions in C++</li>
+                        <li>Function prototypes and declarations</li>
+                        <li>Function parameters (pass by value, pass by reference)</li>
+                        <li>Returning values from functions</li>
+                        <li>Function overloading and default arguments</li>
+                        <li>Recursion and its applications in C++</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Arrays and Strings</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Introduction to arrays and their usage</li>
+                        <li>Single-dimensional and multi-dimensional arrays</li>
+                        <li>Array initialization and manipulation</li>
+                        <li>String handling in C++ (null-terminated strings)</li>
+                        <li>String operations and standard library functions</li>
+                        <li>Character arrays vs. string objects (C-style strings vs. std::string)</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Object-Oriented
+                    Programming Concepts</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Introduction to object-oriented programming (OOP)</li>
+                        <li>Classes and objects in C++</li>
+                        <li>Encapsulation and data hiding principles</li>
+                        <li>Constructors and destructors</li>
+                        <li>Member functions and member variables</li>
+                        <li>Access specifiers (public, private, protected)</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> Inheritance,
+                    Polymorphism, and
+                    Encapsulation</h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Inheritance and its types (single, multiple, multilevel, hierarchical)</li>
+                        <li>Base class and derived class relationships</li>
+                        <li>Method overriding and runtime polymorphism (virtual functions)</li>
+                        <li>Abstract classes and pure virtual functions</li>
+                        <li>Encapsulation and information hiding in OOP</li>
+                        <li>Benefits of using inheritance and polymorphism</li>
+                    </ul>
+                </div>
+
+                <h3 style="color: white;" class="detail-box"><i class='bx bx-chevron-right'></i> File Handling in C++
+                </h3>
+                <div class="hidden-by-default">
+                    <ul>
+                        <li>Input and output operations using streams</li>
+                        <li>File streams and their modes (ifstream, ofstream, fstream)</li>
+                        <li>Reading and writing data to/from files</li>
+                        <li>Error handling and file status flags</li>
+                        <li>Sequential file processing (line-by-line input/output)</li>
+                        <li>Binary file handling and data serialization techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="prereq padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Prerequisites
+            </h2>
+            <div class="hidden-by-default">
+                <p>No prior programming experience required. Basic computer literacy and familiarity with using a
+                    computer
+                    are recommended.</p>
+            </div>
+        </div>
+        <hr>
+        <div id="instrucors" class="instrucors padding20">
+            <h2 class="detail-box instrucors-h2">
+                <i class='bx bx-chevron-right'></i>
+                Instructors
+            </h2>
+            <div id="instructors-hidden-box" class="hidden-by-default">
+                <p>Our course is led by experienced C++ developers and instructors:</p>
+                <!-- instructors box  -->
+                <div class="instructors-box">
+                    <div class="instructor user2m">
+                        <div class="row1">
+                            <div class="photo">
+                                <img src="media/user2m.png" alt="John Smith's photo">
+                            </div>
+                            <div class="ver-row">
+                                <div class="name">John Smith</div>
+                                <div class="pro">Programming Instructor</div>
+                                <div class="rat-s-c">
+                                    <div class="ins-rating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                    <div class=" ins-students"
+                                        style="display: flex;justify-content: center;align-content: center;align-items: center; gap: 5px;">
+                                        <i class='bx bxs-user-check'></i>
+                                        13,940
+                                    </div>
+                                    <div class="ins-courses"
+                                        style="display: flex;justify-content: center;align-content: center;align-items: center; gap: 5px;">
+                                        <i class='bx bxs-book-alt'></i>
+                                        7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instructor user1f">
+                        <div class="row1">
+                            <div class="photo">
+                                <img src="media/user1f.png" alt="John Smith's photo">
+                            </div>
+                            <div class="ver-row">
+                                <div class="name">Sarah Lee</div>
+                                <div class="pro">Software Developer</div>
+                                <div class="rat-s-c">
+                                    <div class="ins-rating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <div class="ins-students"
+                                        style="display: flex;justify-content: center;align-content: center;align-items: center; gap: 5px;">
+                                        <i class='bx bxs-user-check'></i>
+                                        9,502
+                                    </div>
+                                    <div class="ins-courses"
+                                        style="display: flex;justify-content: center;align-content: center;align-items: center; gap: 5px;">
+                                        <i class='bx bxs-book-alt'></i>
+                                        9
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class=" duration padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Duration
+            </h2>
+            <div class="hidden-by-default">
+                <p>The course is scheduled for 8 weeks, with 2 sessions per week (total of 16 sessions).</p>
+            </div>
+        </div>
+        <hr>
+        <div class="asses padding20">
+            <h2 class="detail-box">
+                <i class='bx bx-chevron-right'></i>
+                Assessment and Certification
+            </h2>
+            <div class="hidden-by-default">
+                <p>Assessment will be based on quizzes, assignments, and the final project. Upon successful
+                    completion, you will receive a certificate of achievement.</p>
+            </div>
+        </div>
+        <div class="hidden-by-default">
+        </div>
+    </div>
+
+    <!-- section for the popup share modal  -->
+    <div class="popup-share">
+        <div class="popup-share-fg">
+            <header>
+                <span>Share</span>
+                <div class="close"><i class="uil uil-times"></i></div>
+            </header>
+            <div class="content">
+                <p>Share this Course via</p>
+                <ul class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </ul>
+                <p>Or copy link</p>
+                <div class="field">
+                    <i class="url-icon uil uil-link"></i>
+                    <input type="text" readonly value="edu-craft.com/C++-for-beginners">
+                    <button>Copy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="width: 75%; max-width: var(--mx-width); border: 2px dashed var(--bg-lightc2); margin: 10px 0px;">
+
+    <!-- comments section -->
+    <div id="comments-section" class="comments-section details-box new-box">
+        <h1>
+            <i class='bx bxs-message-square-dots'></i>
+            What other people say?
+        </h1>
+        <div class="comment">
+            <div class="image-rat">
+                <img src="media/user-1.png" alt="photo">
+                <p>Sasha</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="image-rat">
+                <img src="media/user-2.png" alt="photo">
+                <p>Sakura</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="image-rat">
+                <img src="media/user-3.png" alt="photo">
+                <p>Emma</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+        <div id="show-all-comments" class="showallc link-hover">
+            Show All Comments
+        </div>
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-4.png" alt="photo">
+                <p>Noah</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-5.png" alt="photo">
+                <p>Olivia</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-6.png" alt="photo">
+                <p>James</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-7.png" alt="photo">
+                <p>Lucas</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-8.png" alt="photo">
+                <p>Sarah</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+
+        <div class="comment hidden-by-default">
+            <div class="image-rat">
+                <img src="media/user-9.png" alt="photo">
+                <p>Adolf</p>
+            </div>
+            <div class="rating-comment">
+                <div class="comment-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint error ipsa voluptates sit, nostrum
+                    debitis
+                    est quas voluptate voluptatem praesentium provident officia atque laboriosam tempore! Quam provident
+                    dolore repellat molestiae!</p>
+            </div>
+        </div>
+        <div id="show-less-comments" class="showallc link-hover hidden-by-default">
+            Show Less Comments
+        </div>
+    </div>
+    <!-- <hr style="width: 75%; max-width: var(--mx-width); border: 2px dashed var(--bg-lightc2); margin: 10px 0px;"> -->
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 30%;">
+                    <div class="logo">
+                        <i class="fa-solid fa-house-laptop"></i>
+                        <div class="txt">
+                            <span class="span1">Edu</span>
+                            <span class="hy">-</span>
+                            <span class="span2">Craft</span>
+                            <br>
+                            <span class="span3">Craft Your Future with Edu-Craft!</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 1.2em; margin-bottom: 5px; margin-top: 10px; color: var(--bg-lightc3);">
+                        <b>About
+                            us: </b>
+                    </p>
+                    <p style="color: var(--bg-lightc3); opacity: .6;">Empowering learners with innovative education.
+                        Explore, create,
+                        and excel
+                        with our engaging
+                        courses and resources.</p>
+                </div>
+
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>pages Links</h4>
+                    <ul>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="margin-left: 40px;">
+                    <h4>categories links</h4>
+                    <ul>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                        <li><a href="#">category</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a target="_blank" class="facebook" href="https://www.facebook.com/"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a target="_blank" class="telegram" href="https://web.telegram.org/k/"><i
+                                class="uil uil-telegram-alt"></i></a>
+                        <a target="_blank" class="instagram" href="https://www.instagram.com/"><i
+                                class="uil uil-instagram"></i></a>
+                        <a target="_blank" class="linkedin" href="https://www.linkedin.com/feed/"><i
+                                class="uil uil-linkedin-alt"></i></a>
+                    </div>
+                    <h4>Email us</h4>
+                    <a target="_blank" class="email-us" href="mailto: edu-craft@example.edu.eg"><i
+                            class="uil uil-envelope"></i>edu-craft@example.edu.eg</a>
+                </div>
+            </div>
+        </div>
+        <p class="copywrite">
+            © 2024 EduCraft. All rights reserved. Explore innovative education and shape your future with us.
+        </p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0ede2dd129.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
